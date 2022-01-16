@@ -1,0 +1,21 @@
+name: foxnews
+type: theme
+description: 'My Awesome theme'
+package: Other
+core_version_requirement: ^8 || ^9
+libraries:
+  - foxnews/global  
+#  global is used for attaching css and js.
+base theme: false
+
+regions:
+  logo: 'Logo'
+  navigation_menu_top: 'Navigation_menu_top'
+  navigation_menu_bottom: 'Navigation_menu_bottom'
+  sidebar_first: 'Sidebar_Left'
+  content: 'Content'
+  sidebar_second: 'Sidebar_Right'
+  content_list: 'Content_List'
+  content_first: 'Content_First'
+  footer: 'Footer'
+  

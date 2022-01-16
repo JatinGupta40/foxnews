@@ -1,0 +1,150 @@
+@import './color';
+@import './fonts';
+
+.banner
+{
+  height: 50px;
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  .logo
+  {
+    width: 10%;
+    position: absolute;
+   
+  }
+  .site-branding
+  {
+    img
+    {
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-color: $white;
+      background-size: 100%;
+      border: 3px solid $white;
+      margin-left: 8px;
+      margin-top: 7px;
+      height: 96px;
+      border-width: 3px;
+    }
+  } 
+  // Navigation Menus
+  .menuregion
+  {
+    width: 100%;
+    border-top: 4px solid #c20017;
+    background-color: $headerbg;
+    display: flex;
+    padding-left: 94px;
+    .navigation_menu
+    {
+      ul
+      {
+        list-style-type: none;
+        display: flex;
+        
+        li
+        {
+          float: left;
+          a
+          {
+            padding: 6px 5px;
+            color: $white;
+            transition: background .2s linear;
+            font-size: $navmenu;
+            font-weight: 600;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .search-block-form
+    {
+      margin-top: .99rem;
+      form
+      {
+        display: flex;
+      }
+      .search
+      {
+        margin-left: 170px;  
+      }
+    }
+    #block-useraccount
+    {
+      margin-left: -30px;
+    }
+
+  }
+}
+.bottomregion
+{
+  ul
+  {
+    list-style-type: none;
+    margin-left: 95px;
+    font-weight: 600;
+    li
+    {
+      float: left;
+      span
+      {
+        color: $darkred;
+      }
+      a
+      {
+        padding: 6px 5px;
+        color:$black;
+        font-size: $navmenu;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+// Hamburger
+.banner a.icon
+{
+  background: black;
+  right: 0;
+}
+.banner a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+// Mobile.
+@media(max-width: 480px)
+{
+  .menuregion
+  {
+    padding-left: 0 !important;
+    .search-block-form
+    {
+      margin-top: 0% !important;
+      form
+      {
+        display: block !important;
+      }
+    }
+    .search
+    {
+      margin-left: 20px !important;
+    }
+  }
+  .navigation_menu
+  {
+    ul
+    {
+      display: none !important;
+    }
+  }
+  .search
+  {
+    margin-top: 40px;
+  }
+  
+}

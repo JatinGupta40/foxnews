@@ -1,0 +1,7 @@
+global:
+  version: 1.0
+  css:
+    theme:
+      assets/css/sass/main.css: { }
+  js:
+    assets/js/headerhamburger.js: { }
