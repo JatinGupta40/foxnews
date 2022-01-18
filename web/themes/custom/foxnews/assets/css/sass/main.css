@@ -49,9 +49,6 @@ h1, h2, h3, h4, h5, h6, p, a {
   list-style-type: none;
   display: flex;
 }
-.banner .menuregion .navigation_menu ul li {
-  float: left;
-}
 .banner .menuregion .navigation_menu ul li a {
   padding: 6px 5px;
   color: white;
@@ -60,17 +57,17 @@ h1, h2, h3, h4, h5, h6, p, a {
   font-weight: 600;
   text-decoration: none;
 }
-.banner .menuregion .search-block-form {
-  margin-top: 0.99rem;
+.banner .menuregion .useraccountmenu {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
 }
-.banner .menuregion .search-block-form form {
-  display: flex;
+.banner .menuregion .useraccountmenu .searchicon {
+  margin: 2px;
+  color: #edf6ff;
 }
-.banner .menuregion .search-block-form .search {
-  margin-left: 170px;
-}
-.banner .menuregion #block-useraccount {
-  margin-left: -30px;
+.banner .menuregion .hamburger {
+  display: none;
 }
 
 .bottomregion ul {
@@ -91,35 +88,62 @@ h1, h2, h3, h4, h5, h6, p, a {
   text-decoration: none;
 }
 
-.banner a.icon {
-  background: black;
-  right: 0;
+@media (max-width: 1024px) {
+  .navigation_menu ul .Sports, .navigation_menu ul .Lifestyle, .navigation_menu ul .Weather, .navigation_menu ul .TV, .navigation_menu ul .Fox, .navigation_menu ul .Listen {
+    display: none;
+  }
 }
-
-.banner a:hover {
-  background-color: #ddd;
-  color: black;
+@media (max-width: 690px) {
+  .navigation_menu ul .Business {
+    display: none;
+  }
 }
-
 @media (max-width: 480px) {
-  .menuregion {
+  .banner .site-branding img {
+    margin-left: 8px;
+    margin-top: 20px;
+    height: 25px;
+    width: auto;
+    background-color: inherit;
+  }
+
+  header .menuregion {
     padding-left: 0 !important;
   }
-  .menuregion .search-block-form {
+  header .menuregion .search-block-form {
     margin-top: 0% !important;
+    display: none !important;
   }
-  .menuregion .search-block-form form {
+  header .menuregion .search-block-form form {
     display: block !important;
   }
-  .menuregion .search {
+  header .menuregion .search-block-form form .search {
     margin-left: 20px !important;
   }
-
-  .navigation_menu ul {
+  header .navigation_menu ul {
     display: none !important;
   }
 
-  .search {
-    margin-top: 40px;
+  .hamburger {
+    padding: 20px;
+    display: block !important;
+    margin-left: auto;
   }
+  .hamburger .svg-inline--fa {
+    color: white;
+    height: 20px;
+    width: auto;
+  }
+}
+footer {
+  background-color: #036;
+  margin-top: 360px;
+  padding: 32px 0 24px 0;
+}
+footer .navigation_menu ul li {
+  list-style-type: none;
+}
+footer .navigation_menu ul li a {
+  color: #edf6ff;
+  text-decoration: none;
 }
