@@ -18,4 +18,9 @@ regions:
   content_list: 'Content_List'
   content_first: 'Content_First'
   footer: 'Footer'
+  footer_logo: 'Footer logo'
+  footer_legal: 'Footer Legal'
+  footer_legal_text: 'Footer Legal Text'
+  footer_social_icon: 'Footer Social Icon'
+
   

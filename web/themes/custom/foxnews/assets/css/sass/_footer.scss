@@ -3,20 +3,316 @@ footer
   background-color: $headerbg;
   margin-top: 360px;
   padding: 32px 0 24px 0;
+  .footerupper
+  {
+    margin: 0 24px;
+    .footer
+    {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      nav
+      {
+        margin-bottom: 30px;
+        width: 16.666667%;
+    
+      }
+      h2
+      {
+        //margin-inline-start: 40px;
+        color: $whitetext;
+        font-weight: bold;
+        margin-block-end: -10px;
+        font-size: 18px;
+        padding: 0 16px;
+      }
+      ul
+      {
+        padding: 0 16px;
+        li
+        {
+          a
+          {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
   .navigation_menu
   {
     ul
     {
       li
       {
-
         list-style-type: none;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 6px;
         a
         {
             color:$whitetext;
             text-decoration: none;
         }
+        a:hover
+        {
+          color: $footerhover;
+          transition: background,.25s,ease-in-out;
+          border-bottom: 2px solid $footerhoverborderbottom;
+        }
+      }
+    }
+  }
+  .footerlower
+  {
+    margin: 0 24px;
+    padding-top:24px ;
+    border-top: 1px solid $footerborderblue;
+    overflow: hidden;
+    // Social Icons to shown on top for Mobile, so disabled from here.
+    .socialiconmobile
+    {
+      display: none;
+    }
+    .footer_legal_section
+    {
+      display: flex;
+      .branding
+      {
+        margin-right: 16px;
+        a
+        {
+          opacity: 0.15;
+        }
+      }
+      .legal
+      {
+        width: calc(100% - 496px);
+        .legal_top
+        {
+          nav
+          {
+            ul
+            {
+              display: flex;
+              padding: 0%;
+              margin: 0%;
+              flex-wrap: wrap;
+              li
+              {
+                font-size: 10px;
+                margin-right: 5px;
+                padding-right: 6px;
+                position: relative;
+                list-style-type: none;
+                line-height: 18px;
+                margin-bottom: 0;
+                margin-top: -3px;
+              }
+              li:after
+              {
+                content: "";
+                background-color: $footerblueline;
+                position: absolute;
+                top: 3px;
+                right: -1px;
+                height: 12px;
+                width: 1px;
+              }
+              li:last-child:after
+              {
+                content: none;
+              }
+            }
+          }
+        }
+        .legal_bottom
+        {
+          display: flex;
+          nav
+          {
+            ul
+            {
+              margin: 0;
+              padding:0;
+              .legalTextTitle
+              {
+                display: none;
+              }  
+              .legalText
+              {
+                p
+                {
+                  margin: 0;
+                  font-size: 12px;
+                  color: $footerhover;
+                  line-height: 21px;
+                  a
+                  {
+                    font-size: 12px;
+                  }
+                }
+              }  
+            }
+          }
+        }
+      }
+      .socialiconlaptop
+      {
+        .social-icon
+        {
+          clear: none;
+          display: flex;
+          justify-content: flex-end;
+          .footer_icon_menu
+          {
+            ul
+            {
+              display: flex; 
+              list-style-type: none;
+              margin-left: 10px;
+              margin-top: 0;
+              margin-bottom: 6px;
+              flex-wrap: wrap;
+              padding: 0;
+              li
+              {  
+                margin: 0 0 0 8px;
+                .socialicon
+                {
+                  display: flex;
+                  a
+                  {   
+                    height: 30px;
+                    width: 30px;
+                    background-color: $socialiconbg;
+                    border-radius: 50%;
+                    img
+                    {
+                      position: absolute;
+                      content: "";
+                      left: 7px;
+                      top: 7px;
+                      background-position: 0 0;
+                      background-size: 100% 100%;
+                      background-repeat: no-repeat;
+                      height: 16px;
+                      width: 16px;
+                    }
+                  } 
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
 }
+
+// Responsive.
+@media(max-width:480px)
+{
+  footer
+  {
+    .footerupper
+    {
+      margin: 0;
+      .footer
+      {
+        display: block;
+        nav
+        {
+          display: inline-block;
+          flex-direction: column;
+          width: calc(50% - 32px);
+          margin-bottom: 10px;
+          vertical-align: top;
+        }
+        ul
+        {
+          li
+          {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .footerlower
+    {
+      .socialiconmobile
+      {
+        display: flex;
+        margin-bottom: 32px;
+        .social-icon
+        {
+          clear: none;
+          display: flex;
+          justify-content: flex-end;
+          .footer_icon_menu
+          {
+            ul
+            {
+              display: flex; 
+              list-style-type: none;
+              margin-left: 10px;
+              margin-bottom: 6px;
+              flex-wrap: wrap;
+              padding: 0;
+              li
+              {  
+                margin: 0 0 0 8px;
+                .socialicon
+                {
+                  display: flex;
+                  a
+                  {
+                    height: 30px;
+                    width: 30px;
+                    background-color: $socialiconbg;
+                    border-radius: 50%;
+                    img
+                    {
+                      position: absolute;
+                      content: "";
+                      left: 7px;
+                      top: 7px;
+                      background-position: 0 0;
+                      background-size: 100% 100%;
+                      background-repeat: no-repeat;
+                      height: 16px;
+                      width: 16px;
+                      
+                    }
+                  } 
+                }
+              }
+            }
+          }
+        }
+      }
+     .footer_legal_section
+      {
+        .legal
+        {
+          width: calc(100% - 68px);
+          .legal_top
+          {
+            nav
+            {
+              ul
+              {
+                flex-wrap: wrap;
+              }
+            }
+          }
+        }
+        .socialiconlaptop
+        {
+          display: none;
+        }
+      }
+    }
+  }
+}
+  
