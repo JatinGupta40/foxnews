@@ -19,7 +19,6 @@ footer
       }
       h2
       {
-        //margin-inline-start: 40px;
         color: $whitetext;
         font-weight: bold;
         margin-block-end: -10px;
@@ -98,6 +97,7 @@ footer
               padding: 0%;
               margin: 0%;
               flex-wrap: wrap;
+              margin-bottom: 10px;
               li
               {
                 font-size: 10px;
@@ -164,43 +164,27 @@ footer
           clear: none;
           display: flex;
           justify-content: flex-end;
+          margin-left: 10px;
           .footer_icon_menu
           {
-            ul
+            display: flex;
+            .socialicon
             {
-              display: flex; 
-              list-style-type: none;
-              margin-left: 10px;
-              margin-top: 0;
-              margin-bottom: 6px;
-              flex-wrap: wrap;
-              padding: 0;
-              li
-              {  
-                margin: 0 0 0 8px;
-                .socialicon
-                {
-                  display: flex;
-                  a
-                  {   
-                    height: 30px;
-                    width: 30px;
-                    background-color: $socialiconbg;
-                    border-radius: 50%;
-                    img
-                    {
-                      position: absolute;
-                      content: "";
-                      left: 7px;
-                      top: 7px;
-                      background-position: 0 0;
-                      background-size: 100% 100%;
-                      background-repeat: no-repeat;
-                      height: 16px;
-                      width: 16px;
-                    }
-                  } 
-                }
+              background-color: $socialiconbg;
+              border-radius: 50%;
+              margin: 0 0 0 8px;
+              .iconss {
+                display: block;
+                height: 30px;
+                width: 30px;
+              }
+              img
+              {
+                margin-left: 7px;
+                margin-top: 7px;
+                background-position: 0 0;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
               }
             }
           }
@@ -210,6 +194,134 @@ footer
   }
 }
 
+@media(max-width:1023px) {
+  footer {
+    .footerupper {
+    margin: 0 16px;
+      .footer
+      {  
+        nav
+        {
+          margin-bottom: 24px !important;
+          width: calc(50% - 32px) !important;
+          margin-right: 15px;
+        }
+        h2
+        {
+          padding: 0;
+          margin-top: 0;
+        }
+        ul
+        {
+          padding: 0 0;
+        }
+      }
+    }
+    .footerlower 
+    {
+      margin: 0 16px;
+      .socialiconmobile
+      {
+        display: flex !important;
+        margin-bottom: 32px;
+        justify-content: center;
+        .social-icon
+        {
+          clear: none;
+          .footer_icon_menu
+          {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .socialicon
+            {
+              background-color: $socialiconbg;
+              border-radius: 50%;
+              margin: 0 3px 3px 3px;
+              .iconss {
+                display: block;
+                height: 30px;
+                width: 30px;
+              }
+              img
+              {
+                margin-left: 7px;
+                margin-top: 7px;
+                background-position: 0 0;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footerlower{
+      .footer_legal_section {
+        .legal {
+          width: calc(100% - 68px) !important;
+          .legal_top {
+            nav {
+              ul {
+                flex-wrap: wrap;
+              }
+           }
+          }
+        }
+      }
+    }
+  }
+}
+
+    
+
+@media(max-width:768px) {
+  footer {
+    .footerupper
+    {
+      margin: 0 24px;
+      .footer
+      {  
+        nav
+        {
+          margin-bottom: 30px;
+          width: 25% !important;
+          margin-right:0 ;
+        }
+        h2
+        {
+          padding: 0;
+        }
+        ul
+        {
+          padding: 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:540px) {
+  footer {
+    .footerupper{
+      .footer{
+        nav{
+          width: calc(50% - 32px) !important;
+        }
+      }
+    }
+    .footerlower {
+      .footer_legal_section{
+        .socialiconlaptop{
+          display: none;
+        }
+      }
+    }
+  }
+
+}
+
+
 // Responsive.
 @media(max-width:480px)
 {
@@ -217,7 +329,7 @@ footer
   {
     .footerupper
     {
-      margin: 0;
+      margin: 0 16px;
       .footer
       {
         display: block;
@@ -225,21 +337,16 @@ footer
         {
           display: inline-block;
           flex-direction: column;
-          width: calc(50% - 32px);
-          margin-bottom: 10px;
+          width: calc(50% - 32px) !important;
+          margin-bottom: 10px; 
           vertical-align: top;
-        }
-        ul
-        {
-          li
-          {
-            margin-bottom: 0;
-          }
+          margin-right: 15px;
         }
       }
     }
     .footerlower
     {
+      margin: 0 16px;
       .socialiconmobile
       {
         display: flex;
@@ -247,45 +354,29 @@ footer
         .social-icon
         {
           clear: none;
-          display: flex;
-          justify-content: flex-end;
           .footer_icon_menu
           {
-            ul
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .socialicon
             {
-              display: flex; 
-              list-style-type: none;
-              margin-left: 10px;
-              margin-bottom: 6px;
-              flex-wrap: wrap;
-              padding: 0;
-              li
-              {  
-                margin: 0 0 0 8px;
-                .socialicon
-                {
-                  display: flex;
-                  a
-                  {
-                    height: 30px;
-                    width: 30px;
-                    background-color: $socialiconbg;
-                    border-radius: 50%;
-                    img
-                    {
-                      position: absolute;
-                      content: "";
-                      left: 7px;
-                      top: 7px;
-                      background-position: 0 0;
-                      background-size: 100% 100%;
-                      background-repeat: no-repeat;
-                      height: 16px;
-                      width: 16px;
-                      
-                    }
-                  } 
-                }
+              background-color: $socialiconbg;
+              border-radius: 50%;
+              margin: 0 3px 3px 3px;
+
+              .iconss {
+                display: block;
+                height: 30px;
+                width: 30px;
+              }
+              img
+              {
+                margin-left: 7px;
+                margin-top: 7px;
+                background-position: 0 0;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
               }
             }
           }
@@ -315,4 +406,3 @@ footer
     }
   }
 }
-  

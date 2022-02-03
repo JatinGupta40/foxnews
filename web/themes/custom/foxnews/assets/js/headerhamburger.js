@@ -1,8 +1,15 @@
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
+flag = false;
+document.querySelector('.hamburgericon').addEventListener('click', () => {
+  if (!flag) 
+  {
+    // Toggle/click to open.
+    document.querySelector('.hamburger').classList.add('hamburgertogglemenu');
+    flag = true;
   }
-}
+  else
+  {
+    // Toggle/click to close.
+    document.querySelector('.hamburger').classList.remove('hamburgertogglemenu');
+    flag = false;
+  }
+});

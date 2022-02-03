@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '9d22db69f616dacfde8f0b4d61fec5e644682fc3',
+        'reference' => '92ea02c322a3da6188ef8e075be4b27d5607a42b',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -595,6 +595,15 @@
                 0 => '9.3.2',
             ),
         ),
+        'drupal/entity_reference_revisions' => array(
+            'pretty_version' => '1.9.0',
+            'version' => '1.9.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/entity_reference_revisions',
+            'aliases' => array(),
+            'reference' => '8.x-1.9',
+            'dev_requirement' => false,
+        ),
         'drupal/field' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -790,6 +799,15 @@
                 0 => '9.3.2',
             ),
         ),
+        'drupal/paragraphs' => array(
+            'pretty_version' => '1.12.0',
+            'version' => '1.12.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/paragraphs',
+            'aliases' => array(),
+            'reference' => '8.x-1.12',
+            'dev_requirement' => false,
+        ),
         'drupal/path' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -820,7 +838,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '9d22db69f616dacfde8f0b4d61fec5e644682fc3',
+            'reference' => '92ea02c322a3da6188ef8e075be4b27d5607a42b',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
@@ -931,6 +949,15 @@
                 0 => '9.3.2',
             ),
         ),
+        'drupal/twig_tweak' => array(
+            'pretty_version' => '3.1.3',
+            'version' => '3.1.3.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/twig_tweak',
+            'aliases' => array(),
+            'reference' => '3.1.3',
+            'dev_requirement' => false,
+        ),
         'drupal/update' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -1037,6 +1064,15 @@
             'install_path' => __DIR__ . '/../guzzlehttp/psr7',
             'aliases' => array(),
             'reference' => '1afdd860a2566ed3c2b0b4a3de6e23434a79ec85',
+            'dev_requirement' => false,
+        ),
+        'kint-php/kint' => array(
+            'pretty_version' => '4.1.1',
+            'version' => '4.1.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../kint-php/kint',
+            'aliases' => array(),
+            'reference' => 'e64b939f9ceb9620abd982e2a66a3289fcf4e837',
             'dev_requirement' => false,
         ),
         'laminas/laminas-diactoros' => array(

@@ -38,6 +38,27 @@
  * @ingroup themeable
  */
 #}
+
+{#
+/**
+ * @file
+ * Default theme implementation to display a formatted image field.
+ *
+ * Available variables:
+ * - image: A collection of image data.
+ * - image_style: An optional image style.
+ * - url: An optional URL the image can be linked to.
+ *
+ * @see template_preprocess_image_formatter()
+ *
+ * @ingroup themeable
+ */
+#}
+
+      {# {% import "modules/menu_item_extras/templates/menu-levels.html" as menu %} #}
+
+
+
 {%
   set title_classes = [
     label_display == 'visually_hidden' ? 'visually-hidden',
@@ -63,7 +84,8 @@
       <div>
     {% endif %}
     {% for item in items %}
-      <div{{ item.attributes.addClass('socialicon') }}>{{ item.content }}</div>
+      <div{{ item.attributes.addClass('socialicon menu-item') }}>{{ item.content }}
+    </div>
     {% endfor %}
     {% if multiple %}
       </div>

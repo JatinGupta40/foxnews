@@ -133,6 +133,12 @@
   }
 }
 
+// .hamburgernavbar
+// {
+//   // width:100%;
+//   // border: 5px solid yellow;
+// } 
+
 
 // Mobile.
 @media(max-width: 480px)
@@ -189,5 +195,9 @@
       height: 20px;
       width: auto;
     }
+  }
+  .hamburgertogglemenu
+  {
+    height: 300px;
   }
 }
