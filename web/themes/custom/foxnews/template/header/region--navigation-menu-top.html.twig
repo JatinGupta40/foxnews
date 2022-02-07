@@ -1,0 +1,13 @@
+{# Bottom Navigation Menu List #}
+
+{% if content %}
+  <div {{ attributes.addClass('menuregion') }}>
+    {{ content }} 
+    {# Hamburger Menu. #}
+    <div class="hamburger">
+      <a class="menu-toggle hamburgernavbar hamburgericon">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+{% endif %}

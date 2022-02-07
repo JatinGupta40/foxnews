@@ -22,7 +22,7 @@ footer
         color: $whitetext;
         font-weight: bold;
         margin-block-end: -10px;
-        font-size: 18px;
+        font-size: $heading;
         padding: 0 16px;
       }
       ul
@@ -32,7 +32,7 @@ footer
         {
           a
           {
-            font-size: 14px;
+            font-size: $navmenu;
           }
         }
       }
@@ -45,7 +45,7 @@ footer
       li
       {
         list-style-type: none;
-        font-size: 14px;
+        font-size: $navmenu;
         line-height: 18px;
         margin-bottom: 6px;
         a
@@ -100,7 +100,7 @@ footer
               margin-bottom: 10px;
               li
               {
-                font-size: 10px;
+                font-size: $legalinfo;
                 margin-right: 5px;
                 padding-right: 6px;
                 position: relative;
@@ -144,12 +144,12 @@ footer
                 p
                 {
                   margin: 0;
-                  font-size: 12px;
+                  font-size: $legaltext;
                   color: $footerhover;
                   line-height: 21px;
                   a
                   {
-                    font-size: 12px;
+                    font-size: $legaltext;
                   }
                 }
               }  
@@ -217,24 +217,19 @@ footer
         }
       }
     }
-    .footerlower 
-    {
+    .footerlower {
       margin: 0 16px;
-      .socialiconmobile
-      {
+      .socialiconmobile {
         display: flex !important;
         margin-bottom: 32px;
         justify-content: center;
-        .social-icon
-        {
+        .social-icon {
           clear: none;
-          .footer_icon_menu
-          {
+          .footer_icon_menu {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            .socialicon
-            {
+            .socialicon {
               background-color: $socialiconbg;
               border-radius: 50%;
               margin: 0 3px 3px 3px;
@@ -256,7 +251,7 @@ footer
         }
       }
     }
-    .footerlower{
+    .footerlower {
       .footer_legal_section {
         .legal {
           width: calc(100% - 68px) !important;
@@ -272,8 +267,6 @@ footer
     }
   }
 }
-
-    
 
 @media(max-width:768px) {
   footer {
