@@ -1,0 +1,20 @@
+uuid: 68be5d95-08b7-4685-9df1-a5bf60169117
+langcode: en
+status: false
+dependencies:
+  theme:
+    - foxnews
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: foxnews_local_actions
+theme: foxnews
+region: logo
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

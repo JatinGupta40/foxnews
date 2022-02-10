@@ -1,0 +1,13 @@
+uuid: 3cf0f2a7-6b7d-4593-9c69-4511b63857c4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - foxnews
+  menu:
+    - footer
+id: footer__foxnews
+menu: footer
+theme: foxnews
+block_config: '[]'
+menu_config: '[]'

@@ -1,0 +1,27 @@
+uuid: 5f2a75bc-0364-4ed4-9698-9015931006c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.footer-legal-text.field_legal_
+    - system.menu.footer-legal-text
+  module:
+    - link
+    - text
+id: menu_link_content.footer-legal-text.default
+targetEntityType: menu_link_content
+bundle: footer-legal-text
+mode: default
+content:
+  field_legal_:
+    type: text_textarea
+    weight: 21
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  title: true
+  view_mode: true

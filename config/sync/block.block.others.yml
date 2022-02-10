@@ -1,0 +1,25 @@
+uuid: 2e805c3d-f040-4848-aa53-4b9ab406cdef
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-others
+  module:
+    - system
+  theme:
+    - foxnews
+id: others
+theme: foxnews
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-others'
+settings:
+  id: 'system_menu_block:footer-others'
+  label: Others
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

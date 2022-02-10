@@ -1,0 +1,25 @@
+uuid: 5961f8e1-c59d-47e9-bdc9-b4655af47fe0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:image_with_link:12af27ae-3368-4a6e-a5ea-000b44d24ac4'
+  module:
+    - block_content
+  theme:
+    - foxnews
+id: socialicons_2
+theme: foxnews
+region: footer_social_icon
+weight: 0
+provider: null
+plugin: 'block_content:12af27ae-3368-4a6e-a5ea-000b44d24ac4'
+settings:
+  id: 'block_content:12af27ae-3368-4a6e-a5ea-000b44d24ac4'
+  label: 'Social Icons'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

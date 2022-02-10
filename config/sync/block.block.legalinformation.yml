@@ -1,0 +1,25 @@
+uuid: d61131c2-3c58-4009-868f-9b3dd7deccf0
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:80921591-579e-4e6c-b503-7d73a4b60dca'
+  module:
+    - block_content
+  theme:
+    - foxnews
+id: legalinformation
+theme: foxnews
+region: footer
+weight: 2
+provider: null
+plugin: 'block_content:80921591-579e-4e6c-b503-7d73a4b60dca'
+settings:
+  id: 'block_content:80921591-579e-4e6c-b503-7d73a4b60dca'
+  label: 'Legal Information'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

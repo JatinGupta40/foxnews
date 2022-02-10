@@ -1,0 +1,25 @@
+uuid: ad63a049-cc95-41fb-a6f1-bd1f05bc895c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-tv
+  module:
+    - system
+  theme:
+    - foxnews
+id: tv
+theme: foxnews
+region: footer
+weight: -2
+provider: null
+plugin: 'system_menu_block:footer-tv'
+settings:
+  id: 'system_menu_block:footer-tv'
+  label: TV
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: ea824b9e-1e01-4974-a474-ed7c9b33500b
+langcode: en
+status: true
+dependencies: {  }
+id: footer-legal
+label: footer_legal
+description: 'Legal Section Footer'
+locked: false

@@ -1,0 +1,21 @@
+uuid: fc9256ee-6b8c-4748-aeea-b3757a73ba8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_legal_
+    - system.menu.footer-legal-text
+  module:
+    - text
+id: menu_link_content.footer-legal-text.field_legal_
+field_name: field_legal_
+entity_type: menu_link_content
+bundle: footer-legal-text
+label: legal-text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
