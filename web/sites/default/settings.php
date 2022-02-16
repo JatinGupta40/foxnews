@@ -785,6 +785,15 @@ $settings['entity_update_backup'] = TRUE;
  */
 $settings['migrate_node_migrate_type_classic'] = FALSE;
 
+
+/**
+ * Show all error messages, with backtrace information.
+ *
+ * In case the error level could not be fetched from the database, as for
+ * example the database connection failed, we rely only on this value.
+ */
+$config['system.logging']['error_level'] = 'verbose';
+
 /**
  * Load local development override configuration, if available.
  *
@@ -800,18 +809,8 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  */
 #
 
-$databases['default']['default'] = array (
-  'database' => 'foxnews',
-  'username' => 'root',
-  'password' => 'Jatin@12',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
-$settings['config_sync_directory'] = 'sites/default/files/config_cR9Cy0Ep1N-ivPx_yI2adfnepSUoEQGP1D6T3RZyaK9ZhQWJpwO2yZkrXMow4a9txIveX7LMdg/sync';
+$settings['config_sync_directory'] = '../config/sync/';
 
-if (file_exists($app_root . '/' . $site_path . '/web/sites/settings.local.php')) {
-  include $app_root . '/' . $site_path . '/web/sites/settings.local.php';
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
 }

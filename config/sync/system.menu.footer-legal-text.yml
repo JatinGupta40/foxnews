@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: footer-legal-text
 label: Footer_legal_text
-description: ''
+description: 'Footer Legal Text'
 locked: false

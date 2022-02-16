@@ -1,24 +1,18 @@
 @import './color';
 @import './fonts';
 
-.banner
-{
-//  height: 50px;
+.banner {
   position: relative;
   z-index: 100;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  .logo
-  {
+  .logo {
     width: 10%;
     position: absolute;
-   
   }
-  .site-branding
-  {
-    img
-    {
+  .site-branding {
+    img {
       background-position: 0 0;
       background-repeat: no-repeat;
       background-color: $white;
@@ -31,24 +25,18 @@
     }
   } 
   // Navigation Menus
-  .menuregion
-  {
+  .menuregion {
     width: 100%;
-    border-top: 4px solid #c20017;
+    border-top: 4px solid $darkred;
     background-color: $headerbg;
     display: flex;
     padding-left: 94px;
-    .navigation_menu
-    {
-      ul
-      {
+    .navigation_menu {
+      ul {
         list-style-type: none;
         display: flex;
-        
-        li
-        {
-          a
-          {
+        li {
+          a {
             padding: 6px 5px;
             color: $white;
             transition: background .2s linear;
@@ -59,39 +47,31 @@
         }
       }
     }
-    .useraccountmenu
-    {
+    .useraccountmenu {
       position: absolute;
       right: 0;
       margin-right: 20px;
-      .searchicon
-      {
+      .searchicon {
         margin: 2px;
         color: $whitetext
       }
     }
-    .hamburger
-    {
+    .hamburger {
       display: none;
     }
   }
 }
-.bottomregion
-{
-  ul
-  {
+.bottomregion {
+  ul {
     list-style-type: none;
     margin-left: 95px;
     font-weight: 600;
-    li
-    {
+    li {
       float: left;
-      span
-      {
+      span {
         color: $darkred;
       }
-      a
-      {
+      a {
         padding: 6px 5px;
         color:$black;
         font-size: $navmenu;
@@ -102,53 +82,30 @@
 }
 
 // Tab
-@media(max-width: 1024px) 
-{
-
-  .navigation_menu
-  {
-      
-    ul
-    {
-      .Sports, .Lifestyle, .Weather, .TV, .Fox, .Listen
-      {
+@media(max-width: 1024px) {
+  .navigation_menu {
+    ul {
+      .Sports, .Lifestyle, .Weather, .TV, .Fox, .Listen {
         display: none;
       }        
     }
   }
 }
-@media(max-width: 690px) 
-{
-
-  .navigation_menu
-  {
-      
-    ul
-    {
-      .Business
-      {
+@media(max-width: 690px) {
+  .navigation_menu {
+    ul {
+      .Business {
         display: none;
       }        
     }
   }
 }
-
-// .hamburgernavbar
-// {
-//   // width:100%;
-//   // border: 5px solid yellow;
-// } 
-
 
 // Mobile.
-@media(max-width: 480px)
-{
-    .banner
-    {
-      .site-branding
-      {
-        img
-        {
+@media(max-width: 480px) {
+    .banner {
+      .site-branding {
+        img {
           margin-left: 8px;
           margin-top: 20px;
           height: 25px;
@@ -157,47 +114,37 @@
         }
       }
     }
-    header
-    {
-      .menuregion
-      {
+    header {
+      .menuregion {
         padding-left: 0 !important;
-        .search-block-form
-        {
+        .search-block-form {
           margin-top: 0% !important;
           display: none !important;
-          form
-          {
+          form {
             display: block !important;
-            .search
-            {
+            .search {
               margin-left: 20px !important;
             }
           }
         }
       }
-      .navigation_menu
-      {
-        ul
-        {
+      .navigation_menu {
+        ul {
           display: none !important;
         }
       }
     }
-  .hamburger
-  {
+  .hamburger {
     padding: 20px;
     display: block !important;
     margin-left: auto;
-    .svg-inline--fa
-    {
+    .svg-inline--fa {
       color: $white;
       height: 20px;
       width: auto;
     }
   }
-  .hamburgertogglemenu
-  {
+  .hamburgertogglemenu {
     height: 300px;
   }
 }

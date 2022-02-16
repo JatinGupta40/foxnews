@@ -1,60 +1,46 @@
-footer
-{
+footer {
   background-color: $headerbg;
-  margin-top: 360px;
+  margin-top: 150em;
   padding: 32px 0 24px 0;
-  .footerupper
-  {
+  .footerupper   {
     margin: 0 24px;
-    .footer
-    {
+    .footer {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      nav
-      {
+      nav {
         margin-bottom: 30px;
         width: 16.666667%;
-    
       }
-      h2
-      {
+      h2 {
         color: $whitetext;
         font-weight: bold;
         margin-block-end: -10px;
         font-size: $heading;
         padding: 0 16px;
       }
-      ul
-      {
+      ul {
         padding: 0 16px;
-        li
-        {
-          a
-          {
+        li {
+          a {
             font-size: $navmenu;
           }
         }
       }
     }
   }
-  .navigation_menu
-  {
-    ul
-    {
-      li
-      {
+  .navigation_menu {
+    ul {
+      li {
         list-style-type: none;
         font-size: $navmenu;
         line-height: 18px;
         margin-bottom: 6px;
-        a
-        {
-            color:$whitetext;
-            text-decoration: none;
+        a {
+          color:$whitetext;
+          text-decoration: none;
         }
-        a:hover
-        {
+        a:hover {
           color: $footerhover;
           transition: background,.25s,ease-in-out;
           border-bottom: 2px solid $footerhoverborderbottom;
@@ -62,44 +48,34 @@ footer
       }
     }
   }
-  .footerlower
-  {
+  .footerlower {
     margin: 0 24px;
     padding-top:24px ;
     border-top: 1px solid $footerborderblue;
     overflow: hidden;
     // Social Icons to shown on top for Mobile, so disabled from here.
-    .socialiconmobile
-    {
+    .socialiconmobile {
       display: none;
     }
-    .footer_legal_section
-    {
+    .footer_legal_section {
       display: flex;
-      .branding
-      {
+      .branding {
         margin-right: 16px;
-        a
-        {
+        a {
           opacity: 0.15;
         }
       }
-      .legal
-      {
+      .legal {
         width: calc(100% - 496px);
-        .legal_top
-        {
-          nav
-          {
-            ul
-            {
+        .legal_top {
+          nav {
+            ul {
               display: flex;
               padding: 0%;
               margin: 0%;
               flex-wrap: wrap;
               margin-bottom: 10px;
-              li
-              {
+              li {
                 font-size: $legalinfo;
                 margin-right: 5px;
                 padding-right: 6px;
@@ -109,8 +85,7 @@ footer
                 margin-bottom: 0;
                 margin-top: -3px;
               }
-              li:after
-              {
+              li:after {
                 content: "";
                 background-color: $footerblueline;
                 position: absolute;
@@ -119,36 +94,28 @@ footer
                 height: 12px;
                 width: 1px;
               }
-              li:last-child:after
-              {
+              li:last-child:after {
                 content: none;
               }
             }
           }
         }
-        .legal_bottom
-        {
+        .legal_bottom {
           display: flex;
-          nav
-          {
-            ul
-            {
+          nav {
+            ul {
               margin: 0;
               padding:0;
-              .legalTextTitle
-              {
+              .legalTextTitle {
                 display: none;
               }  
-              .legalText
-              {
-                p
-                {
+              .legalText {
+                p {
                   margin: 0;
                   font-size: $legaltext;
                   color: $footerhover;
                   line-height: 21px;
-                  a
-                  {
+                  a {
                     font-size: $legaltext;
                   }
                 }
@@ -157,19 +124,15 @@ footer
           }
         }
       }
-      .socialiconlaptop
-      {
-        .social-icon
-        {
+      .socialiconlaptop {
+        .social-icon {
           clear: none;
           display: flex;
           justify-content: flex-end;
           margin-left: 10px;
-          .footer_icon_menu
-          {
+          .footer_icon_menu {
             display: flex;
-            .socialicon
-            {
+            .socialicon {
               background-color: $socialiconbg;
               border-radius: 50%;
               margin: 0 0 0 8px;
@@ -178,8 +141,7 @@ footer
                 height: 30px;
                 width: 30px;
               }
-              img
-              {
+              img {
                 margin-left: 7px;
                 margin-top: 7px;
                 background-position: 0 0;
@@ -198,21 +160,17 @@ footer
   footer {
     .footerupper {
     margin: 0 16px;
-      .footer
-      {  
-        nav
-        {
+      .footer {  
+        nav {
           margin-bottom: 24px !important;
           width: calc(50% - 32px) !important;
           margin-right: 15px;
         }
-        h2
-        {
+        h2 {
           padding: 0;
           margin-top: 0;
         }
-        ul
-        {
+        ul {
           padding: 0 0;
         }
       }
@@ -238,8 +196,7 @@ footer
                 height: 30px;
                 width: 30px;
               }
-              img
-              {
+              img {
                 margin-left: 7px;
                 margin-top: 7px;
                 background-position: 0 0;
@@ -270,23 +227,18 @@ footer
 
 @media(max-width:768px) {
   footer {
-    .footerupper
-    {
+    .footerupper {
       margin: 0 24px;
-      .footer
-      {  
-        nav
-        {
+      .footer {  
+        nav {
           margin-bottom: 30px;
           width: 25% !important;
           margin-right:0 ;
         }
-        h2
-        {
+        h2 {
           padding: 0;
         }
-        ul
-        {
+        ul {
           padding: 0 0;
         }
       }
@@ -296,38 +248,32 @@ footer
 
 @media(max-width:540px) {
   footer {
-    .footerupper{
-      .footer{
-        nav{
+    .footerupper {
+      .footer {
+        nav {
           width: calc(50% - 32px) !important;
         }
       }
     }
     .footerlower {
-      .footer_legal_section{
-        .socialiconlaptop{
+      .footer_legal_section {
+        .socialiconlaptop {
           display: none;
         }
       }
     }
   }
-
 }
 
 
 // Responsive.
-@media(max-width:480px)
-{
-  footer
-  {
-    .footerupper
-    {
+@media(max-width:480px) {
+  footer {
+    .footerupper {
       margin: 0 16px;
-      .footer
-      {
+      .footer {
         display: block;
-        nav
-        {
+        nav {
           display: inline-block;
           flex-direction: column;
           width: calc(50% - 32px) !important;
@@ -337,34 +283,27 @@ footer
         }
       }
     }
-    .footerlower
-    {
+    .footerlower {
       margin: 0 16px;
-      .socialiconmobile
-      {
+      .socialiconmobile {
         display: flex;
         margin-bottom: 32px;
-        .social-icon
-        {
+        .social-icon {
           clear: none;
-          .footer_icon_menu
-          {
+          .footer_icon_menu {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            .socialicon
-            {
+            .socialicon {
               background-color: $socialiconbg;
               border-radius: 50%;
               margin: 0 3px 3px 3px;
-
               .iconss {
                 display: block;
                 height: 30px;
                 width: 30px;
               }
-              img
-              {
+              img {
                 margin-left: 7px;
                 margin-top: 7px;
                 background-position: 0 0;
@@ -375,24 +314,18 @@ footer
           }
         }
       }
-     .footer_legal_section
-      {
-        .legal
-        {
+     .footer_legal_section {
+        .legal {
           width: calc(100% - 68px);
-          .legal_top
-          {
-            nav
-            {
-              ul
-              {
+          .legal_top {
+            nav {
+              ul {
                 flex-wrap: wrap;
               }
             }
           }
         }
-        .socialiconlaptop
-        {
+        .socialiconlaptop {
           display: none;
         }
       }

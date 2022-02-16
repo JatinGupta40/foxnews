@@ -1,8 +1,0 @@
-uuid: e46ca62c-501c-4487-9d54-85d2ec1004f9
-langcode: en
-status: true
-dependencies: {  }
-id: social
-label: social_icon
-description: 'Footer Social Icons'
-locked: false

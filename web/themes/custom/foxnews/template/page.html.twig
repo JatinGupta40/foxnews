@@ -8,41 +8,39 @@
     {# Menu List Bottom #}
     {{ page.navigation_menu_bottom }}
     {# Search Menu for Hamburger Menu #}
-    <div class="abcd">
-      {{ page.search }}
-    
-    {# Footer for Hamburger #}
-    <div class="hamburgerfooter">
-      <footer role="contentinfo">
-        {{ page.footer }}
-        {# Footer Bottom #}
-        <div class="footerlower">
-          {# Footer Social Site Icons to be shown on top for Mobile.#}
-          <div class="socialiconmobile">
-            {{ page.footer_social_icon }}
-          </div>
-          <div class="footer_legal_section">
-            {# Footer Logo #}
-            <div class="branding">
-              <a href="{{ path('<front>') }}" rel="home">
-                <img class="footer_logo" src="themes/custom/foxnews/assets/images/logo/fox-news-footer-logo-square.svg" />
-              </a>
-            </div>
-            {# Footer Legal Information #}
-            <div class="legal">
-              {{ page.footer_legal }}
-              {{ page.footer_legal_text}}
-            </div>
-            {# Footer Social Icon to be shown at righty corner for Laptop #}
-            <div class="socialiconlaptop">
+    <div class="hamburgersection">
+      {{ page.hamburger }}
+      {# Footer for Hamburger #}
+      <div class="hamburgerfooter">
+        <footer role="contentinfo">
+          {{ page.footer }}
+          {# Footer Bottom #}
+          <div class="footerlower">
+            {# Footer Social Site Icons to be shown on top for Mobile.#}
+            <div class="socialiconmobile">
               {{ page.footer_social_icon }}
             </div>
+            <div class="footer_legal_section">
+              {# Footer Logo #}
+              <div class="branding">
+                <a href="{{ path('<front>') }}" rel="home">
+                  <img class="footer_logo" src="themes/custom/foxnews/assets/images/logo/fox-news-footer-logo-square.svg" />
+                </a>
+              </div>
+              {# Footer Legal Information #}
+              <div class="legal">
+                {{ page.footer_legal }}
+                {{ page.footer_legal_text}}
+              </div>
+              {# Footer Social Icon to be shown at righty corner for Laptop #}
+              <div class="socialiconlaptop">
+                {{ page.footer_social_icon }}
+              </div>
+            </div>
           </div>
-        </div>
-      </footer>
-    </div>      
-</div>
-    
+        </footer>
+      </div>      
+    </div>
   </header>
 
   <main role="main">
