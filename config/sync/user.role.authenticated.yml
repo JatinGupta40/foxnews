@@ -29,4 +29,5 @@ permissions:
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'view media'
+  - 'view paragraph content banner_image_link'
   - 'view paragraph content clickable_image_with_link_text'

@@ -1,0 +1,20 @@
+.layout-top-banner {
+  margin-top: 1.33rem;
+  background-color: #efefef;
+  padding: 16px 0 16px 0;  
+  text-align: center;
+}
+
+
+@media(min-width: 1024px) {
+  .layout-top-banner{
+    display: block;
+  }
+}
+
+@media(max-width: 768px) {
+  .layout-top-banner{
+    display: none;
+  }
+  
+}

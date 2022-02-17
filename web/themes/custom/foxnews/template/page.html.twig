@@ -43,8 +43,15 @@
     </div>
   </header>
 
+  {# Top Banner #}
+  {% if page.top_banner %}
+    <div class="layout-top-banner" role="complementary">
+      {{ page.top_banner }}
+    </div>
+  {% endif %}
+  
   <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    <a id="main-content" tabindex="-1"></a> {# link is in html.html.twig #}
 
     {# <div class="layout-content">
       {{ page.content }}
@@ -55,6 +62,7 @@
 
     {{ page.content_list }}
     {{ page.content_first }} #}
+    
 
     {% if page.sidebar_first %}
       <aside class="layout-sidebar-first" role="complementary">

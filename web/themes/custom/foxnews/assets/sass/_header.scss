@@ -81,8 +81,20 @@
   }
 }
 
+
 // Tab
 @media(max-width: 1024px) {
+  // .banner {
+  //   .logo {
+  //     .site-branding {
+  //       img {
+  //         height: 76px;
+  //         width: 76px;
+  //       }
+  //     }
+  //   }
+  // }
+  
   .navigation_menu {
     ul {
       .Sports, .Lifestyle, .Weather, .TV, .Fox, .Listen {
@@ -91,10 +103,21 @@
     }
   }
 }
-@media(max-width: 690px) {
+
+@media(max-width: 730px) {
   .navigation_menu {
     ul {
       .Business {
+        display: none;
+      }        
+    }
+  }
+}
+
+@media(max-width: 670px) {
+  .navigation_menu {
+    ul {
+      .Opinion {
         display: none;
       }        
     }
@@ -147,4 +170,4 @@
   .hamburgertogglemenu {
     height: 300px;
   }
-}
+} 

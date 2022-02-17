@@ -1,5 +1,5 @@
 flag = false;
-document.querySelector('.hamburgericon').addEventListener('click', () => {
+document.querySelector('.hamburger').addEventListener('click', () => {
   if (!flag) 
   {
     // Toggle/click to open.
@@ -12,8 +12,8 @@ document.querySelector('.hamburgericon').addEventListener('click', () => {
   {
     // Toggle/click to close.
     document.querySelector('.hamburger').classList.remove('hamburgertogglemenu');
-    document.querySelector('.searchHam').classList.remove('searchHamburger');
-    document.querySelector('.hamburgerfooter').classList.remove('hamburgerFooter');
+//    document.querySelector('.searchHam').classList.remove('searchHamburger');
+ //   document.querySelector('.hamburgerfooter').classList.remove('hamburgerFooter');
     flag = false;
   }
 });

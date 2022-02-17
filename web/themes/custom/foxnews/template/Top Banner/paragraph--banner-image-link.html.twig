@@ -49,14 +49,12 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% if content.field_link.0['#url'] is not empty %}
-      <a class="icons" href="{{ content.field_link.0['#url'] }}">{{ content.field_image }}</a>
-      {# <div class="link"> {{ content.field_link }} </div> #}
+      <a href="{{ content.field_link.0['#url'] }}">{{ content.field_image }}</a>
     {% else %}
       <div class="image">
-        {{ content.field_image }}
-      </div>  
+          {{ content.field_image }}
+      </div>        
     {% endif %}
-    
     {# {% block content %}
       {{ content }}
     {% endblock %} #}
