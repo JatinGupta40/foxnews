@@ -1,0 +1,25 @@
+uuid: 5257f28f-e6a2-44a1-b4ef-c5a51fa5d8b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main-navigation-bottom
+  module:
+    - system
+  theme:
+    - foxnews
+id: mainnavigationbottom
+theme: foxnews
+region: navigation_menu_bottom
+weight: 0
+provider: null
+plugin: 'system_menu_block:main-navigation-bottom'
+settings:
+  id: 'system_menu_block:main-navigation-bottom'
+  label: 'Main Navigation Bottom'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 776bfca1-6838-4a07-aa69-65b608967db1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.social-menu.field_social_image
+    - system.menu.social-menu
+id: menu_link_content.social-menu.default
+targetEntityType: menu_link_content
+bundle: social-menu
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_social_image: true
+  langcode: true

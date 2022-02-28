@@ -1,0 +1,8 @@
+uuid: e1aac37c-19a1-4d76-8255-333800dca089
+langcode: en
+status: true
+dependencies: {  }
+id: footer-about
+label: About
+description: About
+locked: false

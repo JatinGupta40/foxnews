@@ -1,0 +1,8 @@
+uuid: b0f00409-9515-4ac9-8bfb-daecc2ee5225
+langcode: en
+status: true
+dependencies: {  }
+id: footer-lifestyle
+label: Lifestyle
+description: Lifestyle
+locked: false

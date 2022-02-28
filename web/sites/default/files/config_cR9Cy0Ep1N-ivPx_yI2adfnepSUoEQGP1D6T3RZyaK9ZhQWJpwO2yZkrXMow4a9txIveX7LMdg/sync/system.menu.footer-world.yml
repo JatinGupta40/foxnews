@@ -1,0 +1,8 @@
+uuid: 28069c2f-9a73-427f-85d8-7a41ebd1df0d
+langcode: en
+status: true
+dependencies: {  }
+id: footer-world
+label: World
+description: 'World News'
+locked: false

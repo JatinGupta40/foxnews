@@ -1,0 +1,10 @@
+uuid: 5c804c0e-ac6c-4ceb-9747-61ecd1b20983
+langcode: en
+status: true
+dependencies: {  }
+id: clickable_image_with_link_text
+label: 'Clickable Image with Link Text'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

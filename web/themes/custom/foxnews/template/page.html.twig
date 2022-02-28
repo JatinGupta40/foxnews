@@ -1,0 +1,45 @@
+<div class="layout-container">
+
+  <header class="banner">
+    {# Logo #}
+    {{ page.logo }}
+    {# Menu List Top #}
+    {{ page.navigation_menu_top }}
+    {# Menu List Bottom #}
+    {{ page.navigation_menu_bottom }}
+  </header>
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+    {# <div class="layout-content">
+      {{ page.content }}
+    </div>/.layout-content #}
+    {# {{ page.left_sidebar}}
+    {{ page.content }}
+    {{ page.right_sidebar}}
+
+    {{ page.content_list }}
+    {{ page.content_first }} #}
+
+    {% if page.sidebar_first %}
+      <aside class="layout-sidebar-first" role="complementary">
+        {{ page.sidebar_first }}
+      </aside>
+    {% endif %}
+
+    {% if page.sidebar_second %}
+      <aside class="layout-sidebar-second" role="complementary">
+        {{ page.sidebar_second }}
+      </aside>
+    {% endif %}
+
+  </main>
+
+  {% if page.footer %}
+    <footer role="contentinfo">
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+
+</div> {# layout-container #}

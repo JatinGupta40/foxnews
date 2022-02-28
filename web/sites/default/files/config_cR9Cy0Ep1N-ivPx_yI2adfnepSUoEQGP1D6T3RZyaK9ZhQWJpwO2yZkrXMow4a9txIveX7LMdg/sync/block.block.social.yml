@@ -1,0 +1,25 @@
+uuid: b46b6aa1-c105-4633-a3c5-a33a01ed4830
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.social
+  module:
+    - system
+  theme:
+    - foxnews
+id: social
+theme: foxnews
+region: footer
+weight: 3
+provider: null
+plugin: 'system_menu_block:social'
+settings:
+  id: 'system_menu_block:social'
+  label: social
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

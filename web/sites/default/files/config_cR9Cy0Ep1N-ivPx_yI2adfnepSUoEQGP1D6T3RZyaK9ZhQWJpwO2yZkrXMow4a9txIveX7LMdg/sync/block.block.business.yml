@@ -1,0 +1,25 @@
+uuid: 2d9b8982-2fdf-444c-bcaa-d9e8714f8728
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-business
+  module:
+    - system
+  theme:
+    - foxnews
+id: business
+theme: foxnews
+region: footer
+weight: -7
+provider: null
+plugin: 'system_menu_block:footer-business'
+settings:
+  id: 'system_menu_block:footer-business'
+  label: Business
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

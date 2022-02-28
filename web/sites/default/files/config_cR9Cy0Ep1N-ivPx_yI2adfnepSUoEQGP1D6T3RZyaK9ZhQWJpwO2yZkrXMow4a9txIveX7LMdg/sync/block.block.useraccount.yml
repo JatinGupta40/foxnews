@@ -1,0 +1,25 @@
+uuid: d54d1fe4-b44b-402d-a64d-4550ccc2d764
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.useraccount
+  module:
+    - system
+  theme:
+    - foxnews
+id: useraccount
+theme: foxnews
+region: navigation_menu_top
+weight: 2
+provider: null
+plugin: 'system_menu_block:useraccount'
+settings:
+  id: 'system_menu_block:useraccount'
+  label: UserAccount
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

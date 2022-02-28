@@ -1,0 +1,25 @@
+uuid: 97d583c4-dcc7-4db0-b0ed-29a50244dbc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-tech
+  module:
+    - system
+  theme:
+    - foxnews
+id: tech
+theme: foxnews
+region: footer
+weight: -4
+provider: null
+plugin: 'system_menu_block:footer-tech'
+settings:
+  id: 'system_menu_block:footer-tech'
+  label: Tech
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

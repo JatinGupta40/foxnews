@@ -1,0 +1,21 @@
+uuid: d2afe536-28f4-4a83-a5ce-9038b1269673
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_letext
+    - system.menu.footer-legal
+  module:
+    - text
+id: menu_link_content.footer-legal.field_letext
+field_name: field_letext
+entity_type: menu_link_content
+bundle: footer-legal
+label: legal-text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,28 @@
+uuid: 7135a412-d7a6-4995-ad35-296cdfce824e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.social.field_menuimage
+    - image.style.thumbnail
+    - system.menu.social
+  module:
+    - link
+    - svg_image
+id: menu_link_content.social.default
+targetEntityType: menu_link_content
+bundle: social
+mode: default
+content:
+  field_menuimage:
+    type: image_image
+    weight: 21
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  title: true
+  view_mode: true
