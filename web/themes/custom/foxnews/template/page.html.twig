@@ -41,23 +41,18 @@
         </footer>
       </div>      
     </div>
-
-
-
   </header>
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    {# <div class="layout-content">
-      {{ page.content }}
-    </div>/.layout-content #}
-    {# {{ page.left_sidebar}}
-    {{ page.content }}
-    {{ page.right_sidebar}}
+    <div class="top-banner">
+      {{ page.top_banner }}
+    </div>
+    {# {{ page.right_sidebar}} #}
 
-    {{ page.content_list }}
-    {{ page.content_first }} #}
+    {# {{ page.content_list }} #}
+    {# {{ page.content_first }}  #}
 
     {% if page.sidebar_first %}
       <aside class="layout-sidebar-first" role="complementary">

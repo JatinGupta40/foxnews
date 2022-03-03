@@ -1,4 +1,4 @@
-.layout-top-banner {
+.top-banner {
   margin-top: 1.33rem;
   background-color: #efefef;
   padding: 16px 0 16px 0;  
@@ -7,13 +7,13 @@
 
 
 @media(min-width: 1024px) {
-  .layout-top-banner{
+  .top-banner{
     display: block;
   }
 }
 
 @media(max-width: 768px) {
-  .layout-top-banner{
+  .top-banner{
     display: none;
   }
   
