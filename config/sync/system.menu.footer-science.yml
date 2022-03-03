@@ -1,0 +1,8 @@
+uuid: 3d0f9b98-ea63-42cd-870d-4a531dedfeb0
+langcode: en
+status: true
+dependencies: {  }
+id: footer-science
+label: Science
+description: Science
+locked: false

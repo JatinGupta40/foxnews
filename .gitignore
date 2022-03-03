@@ -1,3 +1,4 @@
+/web/sites/default/files
 /web/sites/default/settings.local.php
 /web/themes/custom/foxnews/assets/node_modules
 /web/themes/custom/assets/css/*
@@ -5,6 +6,8 @@
 /vendor/
 /web/core/
 /web/modules/contrib/
+/web/modules/README.txt
+/web/modules/
 /web/themes/contrib/
 /web/profiles/contrib/
 /web/libraries/

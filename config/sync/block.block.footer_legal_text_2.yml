@@ -1,0 +1,25 @@
+uuid: 781f3bfa-f190-4bae-a5f3-ad6538a10a13
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-legal-text
+  module:
+    - system
+  theme:
+    - foxnews
+id: footer_legal_text_2
+theme: foxnews
+region: footer_legal_text
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-legal-text'
+settings:
+  id: 'system_menu_block:footer-legal-text'
+  label: Footer_legal_text
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

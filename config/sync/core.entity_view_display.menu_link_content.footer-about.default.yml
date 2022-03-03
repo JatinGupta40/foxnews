@@ -1,0 +1,30 @@
+uuid: ce6795ca-2c1b-4eca-b483-7a42f71a2438
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.footer-about.field_menu_image
+    - system.menu.footer-about
+  module:
+    - image
+id: menu_link_content.footer-about.default
+targetEntityType: menu_link_content
+bundle: footer-about
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_menu_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

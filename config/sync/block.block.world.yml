@@ -1,0 +1,25 @@
+uuid: 120d43c4-99f7-4a84-974e-ebb21236cb23
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-world
+  module:
+    - system
+  theme:
+    - foxnews
+id: world
+theme: foxnews
+region: footer
+weight: -10
+provider: null
+plugin: 'system_menu_block:footer-world'
+settings:
+  id: 'system_menu_block:footer-world'
+  label: World
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

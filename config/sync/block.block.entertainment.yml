@@ -1,0 +1,25 @@
+uuid: cb8ebd76-99c5-4348-8484-c3a5bdac961d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-entertainment
+  module:
+    - system
+  theme:
+    - foxnews
+id: entertainment
+theme: foxnews
+region: footer
+weight: -8
+provider: null
+plugin: 'system_menu_block:footer-entertainment'
+settings:
+  id: 'system_menu_block:footer-entertainment'
+  label: Entertainment
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: 97d25091-59c0-42a8-9e21-69fe0eb3fb4c
+langcode: en
+status: true
+dependencies: {  }
+id: footer-legal-text
+label: Footer_legal_text
+description: 'Footer Legal Text'
+locked: false

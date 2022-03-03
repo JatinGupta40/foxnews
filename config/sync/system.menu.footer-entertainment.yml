@@ -1,0 +1,8 @@
+uuid: 5297c9f6-6251-420b-a835-8d2d4c83ef42
+langcode: en
+status: true
+dependencies: {  }
+id: footer-entertainment
+label: Entertainment
+description: Entertainment
+locked: false

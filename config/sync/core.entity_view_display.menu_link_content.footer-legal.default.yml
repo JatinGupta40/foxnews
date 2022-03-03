@@ -1,0 +1,28 @@
+uuid: 7ba76e1c-2f3f-48f0-8f2c-f8cabff81ee7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.footer-legal.field_letext
+    - system.menu.footer-legal
+  module:
+    - text
+id: menu_link_content.footer-legal.default
+targetEntityType: menu_link_content
+bundle: footer-legal
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_letext:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

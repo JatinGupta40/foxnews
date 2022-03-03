@@ -1,0 +1,25 @@
+uuid: 38610ce4-8a85-48d4-a112-c31ed179321e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-science
+  module:
+    - system
+  theme:
+    - foxnews
+id: science
+theme: foxnews
+region: footer
+weight: -5
+provider: null
+plugin: 'system_menu_block:footer-science'
+settings:
+  id: 'system_menu_block:footer-science'
+  label: Science
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

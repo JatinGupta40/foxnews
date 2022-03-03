@@ -1,0 +1,23 @@
+uuid: 198233eb-0a57-439e-9ba5-09924a9fa3ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - foxnews
+id: sitebranding
+theme: foxnews
+region: logo
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

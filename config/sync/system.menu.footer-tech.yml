@@ -1,0 +1,8 @@
+uuid: 81d50c1f-7fbd-431a-a054-d35482f05be4
+langcode: en
+status: true
+dependencies: {  }
+id: footer-tech
+label: Tech
+description: Technology
+locked: false
