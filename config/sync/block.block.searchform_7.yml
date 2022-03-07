@@ -1,0 +1,21 @@
+uuid: d69cd25e-1ae4-4907-95c9-bce1bdc0aed5
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - foxnews
+id: searchform_7
+theme: foxnews
+region: hamburger
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }

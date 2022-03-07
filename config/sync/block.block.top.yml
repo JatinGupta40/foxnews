@@ -1,0 +1,25 @@
+uuid: da031857-45b0-4368-81ec-58e05d43ae05
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:46de0385-d87d-4321-98c1-eb7711be9002'
+  module:
+    - block_content
+  theme:
+    - foxnews
+id: top
+theme: foxnews
+region: top_banner
+weight: 0
+provider: null
+plugin: 'block_content:46de0385-d87d-4321-98c1-eb7711be9002'
+settings:
+  id: 'block_content:46de0385-d87d-4321-98c1-eb7711be9002'
+  label: TOP
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

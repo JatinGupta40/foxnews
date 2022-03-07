@@ -1,0 +1,25 @@
+uuid: 80d874f6-db4b-4a24-a270-c3bea81c5d48
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:banner_top:c1097393-d9c1-4c8e-b6c6-ac1e25ddb11a'
+  module:
+    - block_content
+  theme:
+    - foxnews
+id: bannertop
+theme: foxnews
+region: top_banner
+weight: 0
+provider: null
+plugin: 'block_content:c1097393-d9c1-4c8e-b6c6-ac1e25ddb11a'
+settings:
+  id: 'block_content:c1097393-d9c1-4c8e-b6c6-ac1e25ddb11a'
+  label: 'Banner Top '
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: 29b137c5-f5f0-4c10-be43-4924606f6f43
+langcode: en
+status: true
+dependencies: {  }
+id: banner_top
+label: 'Banner Top'
+revision: 0
+description: ''

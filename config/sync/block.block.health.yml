@@ -1,0 +1,25 @@
+uuid: 268a3733-3c7d-48a6-84ef-9baae89a5d01
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-health
+  module:
+    - system
+  theme:
+    - foxnews
+id: health
+theme: foxnews
+region: footer
+weight: -3
+provider: null
+plugin: 'system_menu_block:footer-health'
+settings:
+  id: 'system_menu_block:footer-health'
+  label: Health
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

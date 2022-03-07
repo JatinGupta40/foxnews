@@ -1,0 +1,8 @@
+uuid: 0aae4d87-d7fa-4293-9e6e-a009e93e6f94
+langcode: en
+status: true
+dependencies: {  }
+id: footer-politics
+label: Politics
+description: Politics
+locked: false

@@ -1,0 +1,25 @@
+uuid: 498c0622-6a7f-4c65-9b5a-8de6463eae2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-about
+  module:
+    - system
+  theme:
+    - foxnews
+id: about
+theme: foxnews
+region: footer
+weight: -1
+provider: null
+plugin: 'system_menu_block:footer-about'
+settings:
+  id: 'system_menu_block:footer-about'
+  label: About
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
