@@ -8,8 +8,15 @@ dependencies:
     - image.style.thumbnail
     - paragraphs.paragraphs_type.clickable_image_with_link_text
   module:
+    - field_layout
+    - layout_discovery
     - link
     - svg_image
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: paragraph.clickable_image_with_link_text.default
 targetEntityType: paragraph
 bundle: clickable_image_with_link_text

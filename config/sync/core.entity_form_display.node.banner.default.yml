@@ -8,9 +8,16 @@ dependencies:
     - image.style.thumbnail
     - node.type.banner
   module:
+    - field_layout
+    - layout_discovery
     - path
     - svg_image
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.banner.default
 targetEntityType: node
 bundle: banner

@@ -1,0 +1,17 @@
+.wrapper-container {
+  display: flex;
+  padding-top: 20px;
+  .sidebar-left {
+    width: 22%;
+    margin-left: 16px;
+    margin-right: 12px;
+  }
+  .layout-content {
+    width: 55%;  
+  }
+  .sidebar-right {
+    width: 22%;
+    justify-content: right;
+  }
+}
+

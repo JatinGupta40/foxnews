@@ -1,0 +1,24 @@
+uuid: 7ba60a09-6d65-4399-bf4f-e4862a39dbf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.video
+  module:
+    - views
+  theme:
+    - foxnews
+id: views_block__video_block_1
+theme: foxnews
+region: sidebar_video_first
+weight: 0
+provider: null
+plugin: 'views_block:video-block_1'
+settings:
+  id: 'views_block:video-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

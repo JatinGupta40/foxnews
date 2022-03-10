@@ -8,13 +8,16 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - field.field.node.article.field_video
+    - field.field.node.article.field_video_em
     - image.style.large
     - node.type.article
   module:
     - comment
-    - image
+    - svg_image
     - text
     - user
+    - video_embed_field
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
 id: node.article.default
@@ -54,6 +57,25 @@ content:
       link: true
     third_party_settings: {  }
     weight: 10
+    region: content
+  field_video:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_video_em:
+    type: video_embed_field_video
+    label: above
+    settings:
+      autoplay: true
+      responsive: true
+      width: 854
+      height: 480
+    third_party_settings: {  }
+    weight: 112
     region: content
   links:
     settings: {  }

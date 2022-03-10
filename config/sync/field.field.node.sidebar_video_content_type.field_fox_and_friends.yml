@@ -1,0 +1,23 @@
+uuid: 5094ea08-c911-44ea-9607-bf8e7394a19e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fox_and_friends
+    - node.type.sidebar_video_content_type
+  module:
+    - text
+id: node.sidebar_video_content_type.field_fox_and_friends
+field_name: field_fox_and_friends
+entity_type: node
+bundle: sidebar_video_content_type
+label: 'Relatable Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

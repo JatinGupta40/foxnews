@@ -7,13 +7,23 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - field.field.node.article.field_video
+    - field.field.node.article.field_video_em
     - image.style.thumbnail
     - node.type.article
   module:
     - comment
-    - image
+    - field_layout
+    - layout_discovery
     - path
+    - svg_image
     - text
+    - video_embed_field
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: 6VUXB1jTUjK5zjkfMa2Kd2WW4sFUlgfBlfJSx01qLpU
 id: node.article.default
@@ -60,6 +70,22 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_video:
+    type: entity_reference_autocomplete
+    weight: 121
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_video_em:
+    type: video_embed_field_textfield
+    weight: 122
+    region: content
+    settings: {  }
     third_party_settings: {  }
   langcode:
     type: language_select

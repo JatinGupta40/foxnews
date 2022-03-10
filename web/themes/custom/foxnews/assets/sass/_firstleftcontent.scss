@@ -1,0 +1,88 @@
+.left-video-wrapper {
+  border: 1px solid $lightblueborder;
+  background-color: $white;
+  padding: 16px;
+  margin-bottom: 20px;
+  .live-video {
+    .news_video_left {
+      video{
+        width: 100%;
+        height: auto;
+        margin-bottom: 12px;
+      }
+    }
+  }
+  .sidebar-first {
+    display: flex;
+    .fox_and_friends {
+      p {
+        font-size: 16px;
+        a {
+          color: #036;
+          text-decoration: none;
+          font-weight: 700;
+          img {
+            width: 40px;
+            margin: 0;
+            height: auto;
+            margin-right: 8px;  
+          }
+        }
+      }
+    } 
+    .on-now {
+      .on-now-label {
+        .fox_and_friends{
+          .pill {
+            background: $darkred;
+            width: 30%;
+            line-height: 10px;
+            font-size: 9px;
+            padding: 4px 6px 4px 6px;
+            font-weight: bold;
+            margin-bottom: 2px;
+            a {
+              color: $white;
+              border: 1px solid #c20017;
+              margin-bottom: 6px;
+              text-decoration: none;
+            }
+          }
+        } 
+      }
+    }
+  }
+
+  // Exclusive clips
+  .fox_and_friends {
+    p {
+      margin: 0;
+    }
+  }
+  .left-exclusive-clips {
+    .views-row {
+      padding: 16px 0 0 0;
+      display: grid;
+      grid-template-columns: 150px 110px;
+      line-height: 14px;
+      font-weight: 700;
+      .views-field-field-videos {
+        margin-right: 12px;
+      }
+      .views-field-field-fox-and-friends {
+        font-size: 11px;
+        color: $darkred;
+      }
+      .views-field-title {
+        font-size: 13px;
+        a {
+          text-decoration: none;
+          color: $headerbg;
+
+        }
+      }
+    }
+  }
+}
+
+

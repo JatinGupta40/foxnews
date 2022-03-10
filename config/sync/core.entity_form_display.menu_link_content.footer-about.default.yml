@@ -5,11 +5,17 @@ dependencies:
   config:
     - field.field.menu_link_content.footer-about.field_menu_image
     - image.style.thumbnail
-    - system.menu.footer-about
   module:
-    - image
+    - field_layout
+    - layout_discovery
     - link
-    - menu_item_extras
+    - menu_link_content
+    - svg_image
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: menu_link_content.footer-about.default
 targetEntityType: menu_link_content
 bundle: footer-about
@@ -39,9 +45,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
   view_mode:
-    type: menu_item_extras_view_mode_selector_select
-    weight: 0
+    type: string_textfield
+    weight: 22
     region: content
-    settings: {  }
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
 hidden: {  }

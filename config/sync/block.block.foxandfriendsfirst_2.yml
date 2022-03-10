@@ -1,0 +1,25 @@
+uuid: 40f240da-c6a5-4ab9-97f5-f9b860a60a61
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7168fabc-822e-40bc-ab69-91e930136053'
+  module:
+    - block_content
+  theme:
+    - foxnews
+id: foxandfriendsfirst_2
+theme: foxnews
+region: fox_and_friends
+weight: 0
+provider: null
+plugin: 'block_content:7168fabc-822e-40bc-ab69-91e930136053'
+settings:
+  id: 'block_content:7168fabc-822e-40bc-ab69-91e930136053'
+  label: 'Fox and Friends'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: eb30c449-23d3-4e89-bc73-5fede0d8be2e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9cf7a6ae-a6cb-4497-8d99-8c1495a6360e'
+  module:
+    - block_content
+  theme:
+    - foxnews
+id: sidebarlogo_3
+theme: foxnews
+region: sidebar_logo
+weight: 0
+provider: null
+plugin: 'block_content:9cf7a6ae-a6cb-4497-8d99-8c1495a6360e'
+settings:
+  id: 'block_content:9cf7a6ae-a6cb-4497-8d99-8c1495a6360e'
+  label: 'Sidebar Logo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

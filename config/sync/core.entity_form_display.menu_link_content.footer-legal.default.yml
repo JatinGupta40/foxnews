@@ -4,11 +4,17 @@ status: true
 dependencies:
   config:
     - field.field.menu_link_content.footer-legal.field_letext
-    - system.menu.footer-legal
   module:
+    - field_layout
+    - layout_discovery
     - link
-    - menu_item_extras
+    - menu_link_content
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: menu_link_content.footer-legal.default
 targetEntityType: menu_link_content
 bundle: footer-legal
@@ -38,9 +44,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
   view_mode:
-    type: menu_item_extras_view_mode_selector_select
-    weight: 0
+    type: string_textfield
+    weight: 22
     region: content
-    settings: {  }
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
 hidden: {  }

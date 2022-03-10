@@ -1,0 +1,18 @@
+uuid: 044bf592-58ef-4a4b-8c3a-3666b55df4ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Embed Video'
+type: embed_video
+description: 'Use Embed Video to embed any video.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
