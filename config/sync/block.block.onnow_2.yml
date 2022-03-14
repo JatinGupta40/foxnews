@@ -1,0 +1,25 @@
+uuid: 48f03423-815a-46ee-84ca-5ec23423a67c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bebee8d8-2eb5-4ba5-a478-95d4d05b09bb'
+  module:
+    - block_content
+  theme:
+    - foxnews
+id: onnow_2
+theme: foxnews
+region: on_now
+weight: 0
+provider: null
+plugin: 'block_content:bebee8d8-2eb5-4ba5-a478-95d4d05b09bb'
+settings:
+  id: 'block_content:bebee8d8-2eb5-4ba5-a478-95d4d05b09bb'
+  label: 'On Now'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,11 @@
+uuid: ccd844d6-d65a-4acc-93be-b1b897d108ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.exclusive_videos
+id: block_content.exclusive_videos
+target_entity_type_id: block_content
+target_bundle: exclusive_videos
+default_langcode: site_default
+language_alterable: false

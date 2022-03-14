@@ -1,0 +1,11 @@
+uuid: 8fd2ce70-ac0f-40f9-acf7-519aeb9a469b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sidebar_video_content_type
+id: node.sidebar_video_content_type
+target_entity_type_id: node
+target_bundle: sidebar_video_content_type
+default_langcode: site_default
+language_alterable: false

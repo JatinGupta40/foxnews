@@ -1,0 +1,60 @@
+uuid: e0a6b8c7-2a1e-499f-b71b-b3225ec3ef4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.text_style
+  module:
+    - ckeditor
+format: text_style
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Underline
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+        -
+          name: Tools
+          items:
+            - Source
+        -
+          name: Styles
+          items:
+            - Styles
+        -
+          name: FontAwesome
+          items:
+            - DrupalFontAwesome
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

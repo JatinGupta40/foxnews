@@ -6,8 +6,15 @@ dependencies:
     - field.field.menu_link_content.footer-legal-text.field_legal_
     - system.menu.footer-legal-text
   module:
+    - field_layout
+    - layout_discovery
     - link
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: menu_link_content.footer-legal-text.default
 targetEntityType: menu_link_content
 bundle: footer-legal-text

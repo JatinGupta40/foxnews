@@ -1,0 +1,23 @@
+uuid: 6bbf87f1-fdc5-41d6-a4c0-08057c914c63
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.exclusive_videos
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.exclusive_videos.body
+field_name: body
+entity_type: block_content
+bundle: exclusive_videos
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

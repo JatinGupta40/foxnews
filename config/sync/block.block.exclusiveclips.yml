@@ -1,0 +1,25 @@
+uuid: 3e5fb212-5e58-4e0e-8409-3498d36692f4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cb0f2b00-bb18-49f3-8876-5484574e0610'
+  module:
+    - block_content
+  theme:
+    - foxnews
+id: exclusiveclips
+theme: foxnews
+region: sidebar_exclusive_clips
+weight: 0
+provider: null
+plugin: 'block_content:cb0f2b00-bb18-49f3-8876-5484574e0610'
+settings:
+  id: 'block_content:cb0f2b00-bb18-49f3-8876-5484574e0610'
+  label: 'Exclusive Clips'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

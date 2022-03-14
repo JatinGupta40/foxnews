@@ -1,0 +1,13 @@
+uuid: 7ed228b0-8bf6-4cb1-8f42-d8be5a21562e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - foxnews
+  menu:
+    - sidebar-news-video
+id: sidebar-news-video__foxnews
+menu: sidebar-news-video
+theme: foxnews
+block_config: '[]'
+menu_config: '[]'

@@ -1,0 +1,39 @@
+uuid: 96135afb-fbdc-4ba9-95ca-57209b713808
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.embed_video.body
+    - field.field.node.embed_video.field_embed
+    - node.type.embed_video
+  module:
+    - text
+    - user
+id: node.embed_video.default
+targetEntityType: node
+bundle: embed_video
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_embed:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

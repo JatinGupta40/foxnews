@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - editor
+    - media
+    - video_filter
 _core:
   default_config_hash: WNeK5FbcY8pXgEpbD_KgRzlF1-5PL3BJXwqaBctPTqw
 name: 'Full HTML'
@@ -34,3 +36,70 @@ filters:
     status: true
     weight: 11
     settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <p> <h1> <pre>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_view_modes: {  }
+      allowed_media_types:
+        audio: audio
+        video: video
+  video_filter:
+    id: video_filter
+    provider: video_filter
+    status: true
+    weight: 0
+    settings:
+      width: 400
+      height: 400
+      plugins:
+        facebook: facebook
+        maker_tv: maker_tv
+        picasa_slideshows: picasa_slideshows
+        daily_motion: daily_motion
+        slideshare: slideshare
+        myvideo: myvideo
+        foxnews: foxnews
+        youtube: youtube
+        twitter: twitter
+        instagram: instagram
+        twitch: 0
+        democracynow: 0
+        vevo: 0
+        ted: 0
+        myspace: 0
+        brightcove: 0
+        google_video: 0
+        vimeo: 0
+        game_videos: 0
+        wistia: 0
+        teachertube: 0
+        vine: 0
+        ustream: 0
+        mailru: 0
+        capped: 0
+        youku: 0
+        archive_org: 0
+        vbox: 0
+        college_humor: 0
+        coub: 0
+        rutube: 0
+        giphy: 0
+        game_trailers: 0
+        godtube: 0
+        flickr_slideshows: 0
+        whatchado: 0
+        flickr_video: 0
+      allow_multiple_sources: true

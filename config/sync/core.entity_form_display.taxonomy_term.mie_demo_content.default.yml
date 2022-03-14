@@ -7,9 +7,16 @@ dependencies:
     - image.style.thumbnail
     - taxonomy.vocabulary.mie_demo_content
   module:
-    - image
+    - field_layout
+    - layout_discovery
     - path
+    - svg_image
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: P2hBQRKUK1HnBeO-NfrjEMxFxXiwx7P8Ey7GYPqbeRs
 id: taxonomy_term.mie_demo_content.default

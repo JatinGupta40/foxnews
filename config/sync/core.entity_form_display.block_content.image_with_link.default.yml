@@ -7,8 +7,15 @@ dependencies:
     - field.field.block_content.image_with_link.body
     - field.field.block_content.image_with_link.field_social_icon
   module:
+    - field_layout
+    - layout_discovery
     - paragraphs
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: block_content.image_with_link.default
 targetEntityType: block_content
 bundle: image_with_link

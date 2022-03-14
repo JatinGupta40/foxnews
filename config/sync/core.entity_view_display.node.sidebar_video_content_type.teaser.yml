@@ -1,0 +1,35 @@
+uuid: e4473d6d-8b7b-4817-b1ec-bf6f2fb5a238
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sidebar_video_content_type.body
+    - field.field.node.sidebar_video_content_type.field_fox_and_friends
+    - field.field.node.sidebar_video_content_type.field_videos
+    - node.type.sidebar_video_content_type
+  module:
+    - text
+    - user
+id: node.sidebar_video_content_type.teaser
+targetEntityType: node
+bundle: sidebar_video_content_type
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_fox_and_friends: true
+  field_videos: true
+  langcode: true
