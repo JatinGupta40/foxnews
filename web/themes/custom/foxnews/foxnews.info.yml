@@ -1,10 +1,11 @@
 name: foxnews
 type: theme
-description: 'My Awesome theme'
+description: 'My News Site'
 package: Other
 core_version_requirement: ^8 || ^9
 libraries:
   - foxnews/global  
+  - foxnews/node
 #  global is used for attaching css and js.
 base theme: false
 
@@ -14,9 +15,17 @@ regions:
   navigation_menu_bottom: 'Navigation Menu Bottom'
   hamburger: 'Hamburger'
   top_banner: 'Top Banner'
-  sidebar_first: 'Sidebar Left'
-  content: 'Content'
-  sidebar_second: 'Sidebar Right'
+  sidebar_video_first: 'Sidebar Video First'
+  sidebar_logo: 'Sidebar Logo'
+  on_now: 'On now'
+  fox_and_friends: 'Fox And Friends First'
+  sidebar_exclusive_clips: 'Exclusive Clips'
+  home_content: 'Home Content'
+  other_news: 'Other News Home Page'
+  feature_and_faces: 'Feature and Faces'
+  advertisement: 'Advertisement'
+  foxnation: 'FoxNation'
+  sidebar_right: 'Sidebar Right'
   content_list: 'Content List'
   content_first: 'Content First'
   footer: 'Footer'

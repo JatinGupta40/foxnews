@@ -2,6 +2,26 @@ global:
   version: 1.0
   css:
     theme:
-      assets/css/main.css: { }
+      assets/css/All/style.css: { }
   js:
     assets/js/headerhamburger.js: { }
+    assets/js/hoverVideoPlay.js: { }
+    assets/js/autoplay.js: { }
+    assets/js/search.js: { }
+     
+     
+
+# nodepage a library that should only work on page that displays post as in frontpage
+node:
+  version: VERSION
+  css:
+    theme:
+      assets/css/node/style.css: { }
+
+# login:
+#     version: VERSION
+#   css:
+#     theme:
+#       assets/login/style.css: { }
+
+           

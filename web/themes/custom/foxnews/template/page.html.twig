@@ -43,30 +43,72 @@
     </div>
   </header>
 
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
-    <div class="top-banner">
+  {# TOP BANNER #}
+  {% if page.top_banner %}
+  <div class="top-banner">
       {{ page.top_banner }}
-    </div>
-    {# {{ page.right_sidebar}} #}
+  </div>
+  {% endif %}
 
-    {# {{ page.content_list }} #}
-    {# {{ page.content_first }}  #}
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a> {# link is in html.html.twig #}
+    {# Wrapper for aside and content #}
+    {# Left Side Start #}
+    
+    <div class="home-page"> {# Home Page starts Here to divide in 3 sections #}
+      <aside class="sidebar-left" role="complementary"> 
+        <div class="left-video-wrapper"> 
+          {{ page.sidebar_video_first }} 
+          <div class="sidebar-first">
+            {{ page.sidebar_logo }}
+            <div class="on-now">
+              {{ page.on_now }}
+              {{ page.fox_and_friends }}
+            </div>
+          </div>
+        </div>
+        {# Exclusive Clips #}
+        {% if page.sidebar_exclusive_clips %}
+          <div class="left-video-wrapper">
+            {{ page.sidebar_exclusive_clips }}
+          </div>
+        {% endif  %}  
+      </aside> {# Left Side Ends #}  
 
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
+      <div class="home-content">
+        {% if page.home_content %}
+          {{ page.home_content }}
+        {% endif %}
+        
+        {% if page.other_news %}
+          {{ page.other_news}}
+        {% endif %}  
+      </div>
 
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
+      {# SideBar Right Start #}
+      <aside class="sidebar-right" role="complementary"> {# Right Side Start #}
+        {% if page.sidebar_right %}
+          <div class="right-section-wrapper">
+            {{ page.sidebar_right }}
+          </div>
+        {% endif %}
+        
+        {% if page.advertisement %}
+          <div class="advertisement">
+            {{ page.advertisement }} {# https://github.com/JatinGupta40/foxnews/pull/29 #}
+          </div>
+        {% endif %}
+            
+        {% if page.foxnation %}
+          <div class="right-section-wrapper">  
+            {{ page.foxnation }}
+          </div>
+        {% endif %}
+      </aside> {# Right Side End #}
+    </div> {# Home Page ends Here #}
+  </main>  
+  
 
-  </main>
 
   {% if page.footer %}
     <footer role="contentinfo">
@@ -77,7 +119,6 @@
         <div class="socialiconmobile">
           {{ page.footer_social_icon }}
         </div>
-        
         <div class="footer_legal_section">
           {# Footer Logo #}
           <div class="branding">
