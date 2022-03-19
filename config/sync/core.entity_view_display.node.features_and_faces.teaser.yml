@@ -1,0 +1,38 @@
+uuid: c0231c1a-7fc3-44dd-8d9f-2a0f6a9b9108
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.features_and_faces.body
+    - field.field.node.features_and_faces.field_image_features_and_faces
+    - field.field.node.features_and_faces.field_images_un
+    - field.field.node.features_and_faces.field_title_features_and_faces
+    - node.type.features_and_faces
+  module:
+    - text
+    - user
+id: node.features_and_faces.teaser
+targetEntityType: node
+bundle: features_and_faces
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_image_features_and_faces: true
+  field_images_un: true
+  field_title_features_and_faces: true
+  langcode: true
+  search_api_excerpt: true

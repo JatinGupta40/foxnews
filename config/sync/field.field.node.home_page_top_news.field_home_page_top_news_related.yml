@@ -1,0 +1,19 @@
+uuid: 74da3e72-4c7b-4bd8-aeb8-a09d1286586b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_page_top_news_related
+    - node.type.home_page_top_news
+id: node.home_page_top_news.field_home_page_top_news_related
+field_name: field_home_page_top_news_related
+entity_type: node
+bundle: home_page_top_news
+label: 'Home Page Top News Related To'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

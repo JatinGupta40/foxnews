@@ -1,0 +1,29 @@
+uuid: 6f157469-c27e-4aee-a498-0cd1198611c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_features_and_faces
+    - media.type.image
+    - node.type.features_and_faces
+id: node.features_and_faces.field_image_features_and_faces
+field_name: field_image_features_and_faces
+entity_type: node
+bundle: features_and_faces
+label: 'Image Features and Faces'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

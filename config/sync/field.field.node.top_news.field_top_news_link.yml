@@ -1,0 +1,23 @@
+uuid: b9698ffa-4947-4f8a-85c0-8713a0f9fa21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_top_news_link
+    - node.type.top_news
+  module:
+    - link
+id: node.top_news.field_top_news_link
+field_name: field_top_news_link
+entity_type: node
+bundle: top_news
+label: 'Top News Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

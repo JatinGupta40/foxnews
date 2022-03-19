@@ -9,7 +9,7 @@ dependencies:
 id: sitebranding
 theme: foxnews
 region: logo
-weight: 0
+weight: -20
 provider: null
 plugin: system_branding_block
 settings:

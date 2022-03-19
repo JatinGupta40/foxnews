@@ -1,0 +1,66 @@
+uuid: 9c3efc47-a5e4-4fe7-8287-bd6aae1462fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.foxnation_news.body
+    - field.field.node.foxnation_news.field_foxnation_image
+    - field.field.node.foxnation_news.field_foxnation_news_link
+    - field.field.node.foxnation_news.field_watch_now_link
+    - node.type.foxnation_news
+  module:
+    - link
+    - text
+    - user
+id: node.foxnation_news.default
+targetEntityType: node
+bundle: foxnation_news
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_foxnation_image:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_foxnation_news_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 220
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 104
+    region: content
+  field_watch_now_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

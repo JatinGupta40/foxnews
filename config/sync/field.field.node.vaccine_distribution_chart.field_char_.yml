@@ -1,0 +1,35 @@
+uuid: c5dd4203-1681-4a72-a39e-f2c9e4ea3c9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_char_
+    - node.type.vaccine_distribution_chart
+  module:
+    - tablefield
+    - tablefield_required
+third_party_settings:
+  tablefield_required:
+    required_rows: ''
+    required_cols: ''
+    multivalue_inherit: false
+id: node.vaccine_distribution_chart.field_char_
+field_name: field_char_
+entity_type: node
+bundle: vaccine_distribution_chart
+label: 'chart table'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  export: false
+  restrict_rebuild: true
+  restrict_import: true
+  lock_values: false
+  cell_processing: 0
+  empty_rules:
+    ignore_table_structure: false
+    ignore_table_header: false
+field_type: tablefield

@@ -1,0 +1,23 @@
+uuid: 2d39ab7a-c88d-40e6-a87a-f7a3966bb1c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.foxnation_news
+  module:
+    - text
+id: node.foxnation_news.body
+field_name: body
+entity_type: node
+bundle: foxnation_news
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

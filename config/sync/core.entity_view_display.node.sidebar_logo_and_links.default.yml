@@ -1,0 +1,65 @@
+uuid: f6990400-b41a-47d5-ad3d-7ff6b2eced6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sidebar_logo_and_links.body
+    - field.field.node.sidebar_logo_and_links.field_fox_and_friends_sidebar
+    - field.field.node.sidebar_logo_and_links.field_logo
+    - field.field.node.sidebar_logo_and_links.field_on_now
+    - node.type.sidebar_logo_and_links
+  module:
+    - link
+    - text
+    - user
+id: node.sidebar_logo_and_links.default
+targetEntityType: node
+bundle: sidebar_logo_and_links
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_fox_and_friends_sidebar:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_logo:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_on_now:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

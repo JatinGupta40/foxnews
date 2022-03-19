@@ -1,0 +1,18 @@
+uuid: 6208f5b2-61e5-4c01-8a6d-a86a7ddf8ea7
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Sidebar Advertisement'
+type: sidebar_advertisement
+description: 'Right Sidebar Advertisement'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,11 @@
+uuid: a33705d7-e59f-460a-9e77-9672ac0e5d0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.other_news
+id: node.other_news
+target_entity_type_id: node
+target_bundle: other_news
+default_langcode: site_default
+language_alterable: false

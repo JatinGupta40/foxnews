@@ -1,0 +1,11 @@
+uuid: 240da058-00f8-41b7-9a6c-4b7e7c16b532
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sidebar_advertisement
+id: node.sidebar_advertisement
+target_entity_type_id: node
+target_bundle: sidebar_advertisement
+default_langcode: site_default
+language_alterable: false

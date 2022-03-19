@@ -1,0 +1,38 @@
+uuid: b093db25-a1eb-4e30-87c8-20381d2bba8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sidebar_logo_and_links.body
+    - field.field.node.sidebar_logo_and_links.field_fox_and_friends_sidebar
+    - field.field.node.sidebar_logo_and_links.field_logo
+    - field.field.node.sidebar_logo_and_links.field_on_now
+    - node.type.sidebar_logo_and_links
+  module:
+    - text
+    - user
+id: node.sidebar_logo_and_links.teaser
+targetEntityType: node
+bundle: sidebar_logo_and_links
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_fox_and_friends_sidebar: true
+  field_logo: true
+  field_on_now: true
+  langcode: true
+  search_api_excerpt: true

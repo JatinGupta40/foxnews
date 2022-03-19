@@ -25,5 +25,4 @@ permissions:
   - 'search content'
   - 'use text format restricted_html'
   - 'view media'
-  - 'view paragraph content banner_image_link'
   - 'view paragraph content clickable_image_with_link_text'

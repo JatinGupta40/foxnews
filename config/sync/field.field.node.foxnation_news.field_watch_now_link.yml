@@ -1,0 +1,23 @@
+uuid: 197f53c7-29df-4b00-ad5f-3c62fece4be4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_watch_now_link
+    - node.type.foxnation_news
+  module:
+    - link
+id: node.foxnation_news.field_watch_now_link
+field_name: field_watch_now_link
+entity_type: node
+bundle: foxnation_news
+label: 'Watch Now Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

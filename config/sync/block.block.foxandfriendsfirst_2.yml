@@ -6,12 +6,13 @@ dependencies:
     - 'block_content:basic:7168fabc-822e-40bc-ab69-91e930136053'
   module:
     - block_content
+    - system
   theme:
     - foxnews
 id: foxandfriendsfirst_2
 theme: foxnews
 region: fox_and_friends
-weight: 0
+weight: -18
 provider: null
 plugin: 'block_content:7168fabc-822e-40bc-ab69-91e930136053'
 settings:
@@ -22,4 +23,8 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node

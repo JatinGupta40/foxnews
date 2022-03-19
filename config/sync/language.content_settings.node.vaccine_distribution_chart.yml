@@ -1,0 +1,11 @@
+uuid: a5679b49-cecb-44dd-b297-d4cfcb5376d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vaccine_distribution_chart
+id: node.vaccine_distribution_chart
+target_entity_type_id: node
+target_bundle: vaccine_distribution_chart
+default_langcode: site_default
+language_alterable: false

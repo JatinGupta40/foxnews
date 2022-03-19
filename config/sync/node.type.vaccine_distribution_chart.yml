@@ -1,0 +1,18 @@
+uuid: 6c07339a-f327-44b9-8578-7cd2a07a35c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Vaccine Distribution Chart'
+type: vaccine_distribution_chart
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

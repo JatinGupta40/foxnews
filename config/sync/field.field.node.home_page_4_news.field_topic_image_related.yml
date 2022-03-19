@@ -1,0 +1,21 @@
+uuid: c7206cfb-0d5c-4c1e-b721-9362379c8acc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topic_image_related
+    - node.type.home_page_4_news
+  module:
+    - text
+id: node.home_page_4_news.field_topic_image_related
+field_name: field_topic_image_related
+entity_type: node
+bundle: home_page_4_news
+label: 'Topic Image Related'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

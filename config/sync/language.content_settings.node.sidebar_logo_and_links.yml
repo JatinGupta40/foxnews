@@ -1,0 +1,11 @@
+uuid: d82c3e02-edf6-4038-9d50-d10e6362a831
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sidebar_logo_and_links
+id: node.sidebar_logo_and_links
+target_entity_type_id: node
+target_bundle: sidebar_logo_and_links
+default_langcode: site_default
+language_alterable: false
