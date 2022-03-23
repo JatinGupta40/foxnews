@@ -1,0 +1,12 @@
+<?php 
+
+/**
+ * 
+ * Implement hook_page_attachments.
+ */
+
+function foxnewsreplica_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if($form_id == 'user-login-form') {
+    $form['input']['#attributes']['placeholder']['#value'] = t('Enter Name');
+  }
+}

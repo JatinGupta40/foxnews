@@ -1,0 +1,25 @@
+uuid: 236199d6-048d-4555-afef-ee54201c2233
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - foxnews
+id: userlogin
+theme: foxnews
+region: login
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'Sign In'
+  label_display: visible
+  provider: user
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /login
