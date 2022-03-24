@@ -2,7 +2,7 @@ aside {
   display: none;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   aside {
     display: block;
   }
@@ -12,6 +12,9 @@ aside {
     padding: 16px;
     margin-bottom: 20px;
     .foxnation {
+      .views-field-field-foxna {
+        margin-bottom: 16px;
+      }
       p {
         margin: 0;
         img {

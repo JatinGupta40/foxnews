@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.foxnation_news.body
+    - field.field.node.foxnation_news.field_foxna
     - field.field.node.foxnation_news.field_foxnation_image
     - field.field.node.foxnation_news.field_foxnation_news_link
     - field.field.node.foxnation_news.field_watch_now_link
@@ -31,7 +32,9 @@ content:
     weight: 100
     region: content
 hidden:
+  field_foxna: true
   field_foxnation_image: true
   field_foxnation_news_link: true
   field_watch_now_link: true
   langcode: true
+  search_api_excerpt: true

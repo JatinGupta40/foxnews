@@ -48,6 +48,37 @@ function foxnews_theme_suggestions_page_alter(array &$suggestions, array $variab
 
 }
 
+// Implemented Themename_preprocess_HOOK() to add library to the login page.
+
+function foxnws_preprocess_page__user(&$variables) {
+  $variables['#attached']['library'][] = 'foxnews/login';
+}
+
+function foxnws_preprocess_page__front(&$variables) {
+  // if (\Drupal::service('path.matcher')->isFrontPage()) {
+  //   $variables['#attached']['library'][] = 'foxnews/node';
+  // }
+  $variables['#attached']['library'][] = 'foxnews/node';
+}
+
+function foxnws_preprocess_page__top_news_slider(&$variables) {
+  $variables['#attached']['library'][] = 'foxnews/';
+}
+
+/**
+ * Preprocess function to add class to regions.
+ */
+function instagram_preprocess_region(&$variables) {
+  if (isset($variables['region']) && $variables['region'] == 'top_banner') {
+    $variables['attributes']['class'][] = 'top-banner';
+  }
+
+  if (isset($variables['region']) && $variables['region'] == 'sidebar') {
+    $variables['attributes']['class'][] = 'header';
+  }
+}
+
+
 /**
  * Implements hook_theme_suggestions_node_alter().
  */
@@ -93,12 +124,6 @@ function foxnews_preprocess_node(array &$variables) {
   //$variables['display_submitted'] = FALSE;
 }
 
-/**
- * Implements hook_theme_suggestions_views_view_alter().
- */
-function foxnews_theme_suggestions_views_view_alter(array &$suggestions, array $variables) {
-
-}
 
 /**
  * Implements hook_preprocess_form().
@@ -143,3 +168,23 @@ function foxnews_theme_suggestions_details_alter(array &$suggestions, array $var
 function foxnews_preprocess_menu_local_task(array &$variables) {
   //$variables['element']['#link']['url']->setOption('attributes', ['class'=>'rounded']);
 }
+
+/**
+ * Implements hook_theme_suggestions_views_view_alter().
+ */
+function foxnews_theme_suggestions_views_view_alter(&$suggestions, &$variables) {
+  $viewId = $variables['view']->id();
+  $displayId = $variables['view']->current_display;
+  $suggestions[] = 'views_view__' . $viewId;
+  $suggestions[] = 'views_view__' . $viewId . '__' . $displayId;
+}
+
+function foxnews_theme_suggestions_views_view_fields_alter(&$suggestions, &$variables) {
+  $viewId = $variables['view']->id();
+  $displayId = $variables['view']->current_display;
+  $suggestions[] = 'views_view_fields__' . $viewId . '__' . $displayId;
+}
+
+// function foxnews_preprocess_views_view__top_news(&$variables) {
+  
+// }

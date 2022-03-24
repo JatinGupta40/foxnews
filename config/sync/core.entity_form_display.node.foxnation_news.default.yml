@@ -4,15 +4,18 @@ status: true
 dependencies:
   config:
     - field.field.node.foxnation_news.body
+    - field.field.node.foxnation_news.field_foxna
     - field.field.node.foxnation_news.field_foxnation_image
     - field.field.node.foxnation_news.field_foxnation_news_link
     - field.field.node.foxnation_news.field_watch_now_link
+    - image.style.thumbnail
     - node.type.foxnation_news
   module:
     - field_layout
     - layout_discovery
     - link
     - path
+    - svg_image
     - text
 third_party_settings:
   field_layout:
@@ -39,6 +42,14 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_foxna:
+    type: image_image
+    weight: 126
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_foxnation_image:
     type: text_textarea

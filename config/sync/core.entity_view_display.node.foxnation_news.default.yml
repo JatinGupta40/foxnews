@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.foxnation_news.body
+    - field.field.node.foxnation_news.field_foxna
     - field.field.node.foxnation_news.field_foxnation_image
     - field.field.node.foxnation_news.field_foxnation_news_link
     - field.field.node.foxnation_news.field_watch_now_link
     - node.type.foxnation_news
   module:
     - link
+    - svg_image
     - text
     - user
 id: node.foxnation_news.default
@@ -23,6 +25,19 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_foxna:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 106
     region: content
   field_foxnation_image:
     type: text_default
@@ -64,3 +79,4 @@ content:
     region: content
 hidden:
   langcode: true
+  search_api_excerpt: true
