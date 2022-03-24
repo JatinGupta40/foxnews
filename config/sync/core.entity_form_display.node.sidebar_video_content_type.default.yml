@@ -5,12 +5,15 @@ dependencies:
   config:
     - field.field.node.sidebar_video_content_type.body
     - field.field.node.sidebar_video_content_type.field_fox_and_friends
+    - field.field.node.sidebar_video_content_type.field_image_home
     - field.field.node.sidebar_video_content_type.field_videos
+    - image.style.thumbnail
     - node.type.sidebar_video_content_type
   module:
     - field_layout
     - layout_discovery
     - path
+    - svg_image
     - text
     - video_embed_field
 third_party_settings:
@@ -48,6 +51,14 @@ content:
       summary_rows: 3
       placeholder: ''
       show_summary: false
+    third_party_settings: {  }
+  field_image_home:
+    type: image_image
+    weight: 125
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_videos:
     type: video_embed_field_textfield

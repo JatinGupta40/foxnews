@@ -1,0 +1,29 @@
+uuid: dedf2b6a-b0e4-4079-aa0d-02faea38cd35
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.home_page_4_news_
+  module:
+    - system
+    - views
+  theme:
+    - foxnews
+id: views_block__home_page_4_news__block_1
+theme: foxnews
+region: home_content
+weight: -18
+provider: null
+plugin: 'views_block:home_page_4_news_-block_1'
+settings:
+  id: 'views_block:home_page_4_news_-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node

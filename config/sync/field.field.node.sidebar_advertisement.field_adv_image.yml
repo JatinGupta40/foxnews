@@ -1,0 +1,21 @@
+uuid: dddfc68b-04fb-44dd-abfa-8c052a7d2079
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adv_image
+    - node.type.sidebar_advertisement
+  module:
+    - text
+id: node.sidebar_advertisement.field_adv_image
+field_name: field_adv_image
+entity_type: node
+bundle: sidebar_advertisement
+label: 'Adv Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

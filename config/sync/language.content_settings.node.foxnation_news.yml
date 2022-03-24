@@ -1,0 +1,11 @@
+uuid: 21696f4b-64b0-4efd-b7b1-05a3bf0f8d40
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.foxnation_news
+id: node.foxnation_news
+target_entity_type_id: node
+target_bundle: foxnation_news
+default_langcode: site_default
+language_alterable: false

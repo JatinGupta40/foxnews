@@ -6,12 +6,13 @@ dependencies:
     - 'block_content:basic:601fbb9c-f79e-4ce3-9264-10bbe24c00ff'
   module:
     - block_content
+    - system
   theme:
     - foxnews
 id: topbannerrrrrr
 theme: foxnews
 region: top_banner
-weight: 0
+weight: -17
 provider: null
 plugin: 'block_content:601fbb9c-f79e-4ce3-9264-10bbe24c00ff'
 settings:
@@ -22,4 +23,8 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node

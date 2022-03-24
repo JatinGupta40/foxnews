@@ -11,7 +11,7 @@ dependencies:
 id: mainnavigation
 theme: foxnews
 region: navigation_menu_top
-weight: 0
+weight: -18
 provider: null
 plugin: 'system_menu_block:main'
 settings:

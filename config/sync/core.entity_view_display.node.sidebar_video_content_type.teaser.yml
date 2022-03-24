@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.sidebar_video_content_type.body
     - field.field.node.sidebar_video_content_type.field_fox_and_friends
+    - field.field.node.sidebar_video_content_type.field_image_home
     - field.field.node.sidebar_video_content_type.field_videos
     - node.type.sidebar_video_content_type
   module:
@@ -31,5 +32,6 @@ content:
     region: content
 hidden:
   field_fox_and_friends: true
+  field_image_home: true
   field_videos: true
   langcode: true

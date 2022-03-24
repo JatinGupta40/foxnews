@@ -1,0 +1,23 @@
+uuid: 68297840-784f-47ba-9580-083cb4bcccad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.vaccine_distribution_chart
+  module:
+    - text
+id: node.vaccine_distribution_chart.body
+field_name: body
+entity_type: node
+bundle: vaccine_distribution_chart
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

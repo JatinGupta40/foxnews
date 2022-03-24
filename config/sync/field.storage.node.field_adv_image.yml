@@ -1,0 +1,19 @@
+uuid: 684d8a05-fa7f-486a-80e2-1d9b5cc8cabe
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_adv_image
+field_name: field_adv_image
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

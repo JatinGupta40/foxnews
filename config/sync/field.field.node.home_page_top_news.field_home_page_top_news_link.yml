@@ -1,0 +1,23 @@
+uuid: ec023534-7945-432d-a808-6441e956b1dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_page_top_news_link
+    - node.type.home_page_top_news
+  module:
+    - link
+id: node.home_page_top_news.field_home_page_top_news_link
+field_name: field_home_page_top_news_link
+entity_type: node
+bundle: home_page_top_news
+label: 'Home page Top News Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

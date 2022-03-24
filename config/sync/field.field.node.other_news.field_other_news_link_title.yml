@@ -1,0 +1,23 @@
+uuid: faf85884-47b0-4e36-8360-d3de273578bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_other_news_link_title
+    - node.type.other_news
+  module:
+    - link
+id: node.other_news.field_other_news_link_title
+field_name: field_other_news_link_title
+entity_type: node
+bundle: other_news
+label: 'Other News Link Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

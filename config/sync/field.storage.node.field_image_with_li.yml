@@ -1,0 +1,19 @@
+uuid: 5f436184-aa97-4049-92d4-4fc11b2de396
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_image_with_li
+field_name: field_image_with_li
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

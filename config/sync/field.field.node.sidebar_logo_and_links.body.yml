@@ -1,0 +1,23 @@
+uuid: 7ef8d24f-e261-4ee7-a56f-c689b4c3aa0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.sidebar_logo_and_links
+  module:
+    - text
+id: node.sidebar_logo_and_links.body
+field_name: body
+entity_type: node
+bundle: sidebar_logo_and_links
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

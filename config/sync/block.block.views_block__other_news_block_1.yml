@@ -1,0 +1,29 @@
+uuid: 89b7857a-a3fd-4787-bcb3-acf9081e04ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.other_news
+  module:
+    - system
+    - views
+  theme:
+    - foxnews
+id: views_block__other_news_block_1
+theme: foxnews
+region: other_news
+weight: 0
+provider: null
+plugin: 'views_block:other_news-block_1'
+settings:
+  id: 'views_block:other_news-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node

@@ -11,7 +11,7 @@ dependencies:
 id: useraccount
 theme: foxnews
 region: navigation_menu_top
-weight: 2
+weight: -17
 provider: null
 plugin: 'system_menu_block:useraccount'
 settings:
@@ -22,4 +22,8 @@ settings:
   level: 1
   depth: 0
   expand_all_items: false
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: ''

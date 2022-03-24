@@ -1,0 +1,19 @@
+uuid: 18139f41-2d83-4a7a-a117-b89e531ed623
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_logo
+field_name: field_logo
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

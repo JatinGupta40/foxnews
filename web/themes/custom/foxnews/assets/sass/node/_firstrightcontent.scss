@@ -1,0 +1,43 @@
+aside {
+  display: none;
+}
+
+@media screen and (min-width:1024px) {
+  aside {
+    display: block;
+  }
+  .right-section-wrapper{
+    border: 1px solid $lightblueborder;
+    background-color: $white;
+    padding: 16px;
+    margin-bottom: 20px;
+    .foxnation {
+      p {
+        margin: 0;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .views-field-field-watch-now-link  a {
+        color: $darkred;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 11px;
+        text-decoration:  none;
+      }
+      .views-field-field-watch-now-link a:hover {
+        text-decoration: underline;
+      }
+      .views-field-field-foxnation-news-link a {
+        text-decoration: none;
+        color: $headerbg;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .views-field-field-foxnation-news-link a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

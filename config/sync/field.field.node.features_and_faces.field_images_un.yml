@@ -1,0 +1,31 @@
+uuid: 673fc5e0-60f3-4bc1-a0d9-82a99d5a8bdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_images_un
+    - media.type.document
+    - media.type.image
+    - node.type.features_and_faces
+id: node.features_and_faces.field_images_un
+field_name: field_images_un
+entity_type: node
+bundle: features_and_faces
+label: 'Images un'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: document
+field_type: entity_reference

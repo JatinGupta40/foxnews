@@ -9,7 +9,7 @@ dependencies:
 id: searchform_7
 theme: foxnews
 region: hamburger
-weight: 0
+weight: -17
 provider: null
 plugin: search_form_block
 settings:

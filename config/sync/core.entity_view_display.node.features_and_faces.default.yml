@@ -1,0 +1,59 @@
+uuid: 95d2639a-65ba-4bcf-b4c5-ccc8bdfa05a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.features_and_faces.body
+    - field.field.node.features_and_faces.field_image_features_and_faces
+    - field.field.node.features_and_faces.field_images_un
+    - field.field.node.features_and_faces.field_title_features_and_faces
+    - node.type.features_and_faces
+  module:
+    - text
+    - user
+id: node.features_and_faces.default
+targetEntityType: node
+bundle: features_and_faces
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_image_features_and_faces:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_images_un:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_title_features_and_faces:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

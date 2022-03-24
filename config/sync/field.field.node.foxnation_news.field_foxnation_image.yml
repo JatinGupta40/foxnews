@@ -1,0 +1,21 @@
+uuid: 252d45fd-d577-4e6f-a5ec-58886dd497b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_foxnation_image
+    - node.type.foxnation_news
+  module:
+    - text
+id: node.foxnation_news.field_foxnation_image
+field_name: field_foxnation_image
+entity_type: node
+bundle: foxnation_news
+label: 'Foxnation Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
