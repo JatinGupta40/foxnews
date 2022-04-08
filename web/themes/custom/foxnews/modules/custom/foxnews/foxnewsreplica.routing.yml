@@ -1,0 +1,7 @@
+login:
+  path: '/login'
+  defaults: 
+    _form: '\Drupal\foxnews\Form\loginForm'
+    _title: 'Login Form'
+  requirements:
+    _permission: 'access content' 

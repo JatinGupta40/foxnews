@@ -1,0 +1,20 @@
+uuid: df080b19-76e7-40d2-8967-f7c1439b7d6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - foxnews
+id: mainpagecontent
+theme: foxnews
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: visible
+  provider: system
+visibility: {  }

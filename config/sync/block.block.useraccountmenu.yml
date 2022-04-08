@@ -1,23 +1,23 @@
-uuid: fdca3b33-1f6b-4301-98e2-cd7f50811768
+uuid: ae8a660c-e274-43a3-ac38-4f5e89bf757f
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.main
+    - system.menu.account
   module:
     - system
   theme:
     - foxnews
-id: mainnavigation
+id: useraccountmenu
 theme: foxnews
 region: navigation_menu_top
-weight: -20
+weight: -18
 provider: null
-plugin: 'system_menu_block:main'
+plugin: 'system_menu_block:account'
 settings:
-  id: 'system_menu_block:main'
-  label: 'Main navigation'
-  label_display: visible
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
   provider: system
   level: 1
   depth: 0

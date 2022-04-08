@@ -1,0 +1,13 @@
+{
+    "name": "foxnews",
+    "type": "drupal-module",
+    "description": "My Custom Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/foxnews",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/foxnews",
+        "source": "http://cgit.drupalcode.org/foxnews",
+    },
+}

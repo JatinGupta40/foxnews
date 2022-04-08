@@ -11,7 +11,7 @@ dependencies:
 id: useraccount
 theme: foxnews
 region: navigation_menu_top
-weight: -17
+weight: -19
 provider: null
 plugin: 'system_menu_block:useraccount'
 settings:
